@@ -14,7 +14,7 @@ const Login = () => {
 
                         <div className="w-[60%]">
 
-                            <div className="w-[800px] h-[650px] truncate">
+                            <div className="w-full h-full truncate">
                                 <img src={mbimg} alt="mobile image " className='w-full h-full object-cover ' />
 
                             </div>
@@ -23,19 +23,26 @@ const Login = () => {
 
                         <div className="w-[40%]">
 
-                            <div className="flex flex-col w-full h-full mt-[100px]">
+                            <div className="flex flex-col w-full h-full mt-[180px] font-poppins pl-[100px] pr-[20px]">
 
-                                <h1 className='pt-[20px]'>Log in to Exclusive</h1>
-                                <p>Enter your details below</p>
+                                <h1 className='pt-[20px] font-poppins text-[36px] leading-[50px]'>Log in to Exclusive</h1>
+                                <p className='font-poppins text-[16px] leading-[50px] my-[10px]'>Enter your details below</p>
 
-                                <input type="text" placeholder='Enter your phone Number' />
-                                <input type="text" placeholder='Enter your Password' />
+                                <input type="text" placeholder='Enter your phone Number' className='my-[20px] ' />
+                                <hr className='bg-black h-[2px]' />
+                                <input type="text" placeholder='Enter your Password' className='my-[20px]' />
+                                <hr  className='bg-black h-[2px] my-[10px]' />
 
 
-                                <button className='bg-[#DB4444] rounded-[5px] text-white font-poppins px-[10px] py-[10px] text-[20px] float-end'>Login</button>
-                                <Link>Forget Password</Link>
+                                <div className="flex my-[20px] justify-between">
+                                <button className='bg-[#DB4444] rounded-[5px] text-white font-poppins px-[20px] py-[10px] text-[20px] float-end mx-[10px] '>Login</button>
+                                <Link className='mx-[13px] mt-[10px]'>Forget Password</Link>
+                                </div>
 
-                                
+
+                               
+
+
                             </div>
 
 
