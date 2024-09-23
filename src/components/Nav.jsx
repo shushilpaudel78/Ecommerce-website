@@ -26,7 +26,7 @@ const Nav = () => {
 
 
                 <div className="input relative  w-[270px] h-[50px] border-[2px]">
-                    <input type="text" placeholder='What are you looking for ? ' className='w-full h-full bg-[#F5F5F5] px-[10px] font-poppins'  />
+                    <input type="text" placeholder='What are you looking for ? ' className='w-full h-full bg-[#F5F5F5] pl-[10px] pr-[35px] font-poppins rounded-[2px]'  />
                     <IoSearchOutline className='absolute right-[10px] top-[15px] w-[20px]  h-[20px] color-black' />
 
 
@@ -43,7 +43,7 @@ const Nav = () => {
     </div>
 
 
-    <hr className='my-[10px] bg-black' />
+    <hr className='mb-[70px] bg-black' />
 
 
 

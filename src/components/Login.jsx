@@ -6,7 +6,7 @@ const Login = () => {
     return (
         <>
 
-            <div className="w-full h-auto">
+            <div className="w-full h-auto mb-24">
 
                 <div className="max-[1200px] m-auto">
 
@@ -23,7 +23,7 @@ const Login = () => {
 
                         <div className="w-[40%]">
 
-                            <div className="flex flex-col w-full h-full mt-[180px] font-poppins pl-[100px] pr-[20px]">
+                            <div className="flex flex-col w-full h-full mt-[150px] font-poppins pl-[100px] pr-[20px]">
 
                                 <h1 className='pt-[20px] font-poppins text-[36px] leading-[50px]'>Log in to Exclusive</h1>
                                 <p className='font-poppins text-[16px] leading-[50px] my-[10px]'>Enter your details below</p>
@@ -35,7 +35,7 @@ const Login = () => {
 
 
                                 <div className="flex my-[20px] justify-between">
-                                <button className='bg-[#DB4444] rounded-[5px] text-white font-poppins px-[20px] py-[10px] text-[20px] float-end mx-[10px] '>Login</button>
+                                <button className='bg-[#DB4444] rounded-[5px]  hover:bg-violet-600 text-white font-poppins px-[20px] py-[10px] text-[20px] float-end mx-[10px] '>Login</button>
                                 <Link className='mx-[13px] mt-[10px]'>Forget Password</Link>
                                 </div>
 
