@@ -43,7 +43,7 @@ const Nav = () => {
     </div>
 
 
-    <hr className='my-10px bg-black' />
+    <hr className='my-[10px] bg-black' />
 
 
 
