@@ -13,10 +13,6 @@ const Home = () => {
     <Footer />
 
     
-
-
-
-
       
     </>
   )

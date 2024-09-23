@@ -28,10 +28,10 @@ const Login = () => {
                                 <h1 className='pt-[20px] font-poppins text-[36px] leading-[50px]'>Log in to Exclusive</h1>
                                 <p className='font-poppins text-[16px] leading-[50px] my-[10px]'>Enter your details below</p>
 
-                                <input type="text" placeholder='Enter your phone Number' className='my-[20px] ' />
-                                <hr className='bg-black h-[2px]' />
-                                <input type="text" placeholder='Enter your Password' className='my-[20px]' />
-                                <hr  className='bg-black h-[2px] my-[10px]' />
+                                <input type="text" placeholder='Email or Phone Number' className='my-[20px] px-2  border-b-[2px] pb-[5px]' />
+                                {/* <hr className='bg-black h-[2px]' /> */}
+                                <input type="text" placeholder=' Password' className='my-[20px] px-2 border-b-[2px] pb-[5px]'  />
+                                {/* <hr  className='bg-black h-[2px] mb-[10px]' /> */}
 
 
                                 <div className="flex my-[20px] justify-between">
