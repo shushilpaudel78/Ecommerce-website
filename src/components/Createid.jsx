@@ -3,7 +3,7 @@ import mbimg from '../assets/img/mobile.png'
 import { Link } from 'react-router-dom'
 import { FcGoogle } from "react-icons/fc";
 
-const Signup = () => {
+const Createid = () => {
     return (
         <>
 
@@ -89,4 +89,4 @@ const Signup = () => {
     )
 }
 
-export default Signup
+export default Createid

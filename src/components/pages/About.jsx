@@ -2,23 +2,20 @@ import React from 'react'
 import Nav from '../Nav'
 import Footer from '../Footer'
 
-const Contact = () => {
+const About = () => {
   return (
     <>
 
     <Nav />
-    
-    <h1>From contact page</h1>
+
+    <h1>From about</h1>
 
 
     <Footer />
-
-
-
-
+        
       
     </>
   )
 }
 
-export default Contact
+export default About
