@@ -13,7 +13,7 @@ const About_last_cart = () => {
                     <div className="flex">
 
 
-                        <div className="w-[33.33%] flex flex-col  items-center">
+                        <div className="w-[33.33%] flex flex-col  items-center   gap-[10px]">
 
 
                             <div className="w-[80px] h-[80px]"><img src={bus} alt="image" className='w-full h-full object-contain' /></div>
@@ -24,7 +24,7 @@ const About_last_cart = () => {
                         </div>
 
 
-                        <div className="w-[33.33%] flex flex-col  items-center">
+                        <div className="w-[33.33%] flex flex-col  items-center  gap-[10px]">
 
 
                             <div className="w-[80px] h-[80px]"><img src={bus} alt="image" className='w-full h-full object-contain' /></div>
@@ -34,10 +34,10 @@ const About_last_cart = () => {
 
                         </div>
 
-                        
 
 
-                        <div className="w-[33.33%] flex flex-col  items-center">
+
+                        <div className="w-[33.33%] flex flex-col  items-center gap-[10px]">
 
 
                             <div className="w-[80px] h-[80px]"><img src={bus} alt="image" className='w-full h-full object-contain' /></div>

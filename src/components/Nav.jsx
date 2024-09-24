@@ -1,6 +1,9 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import { IoSearchOutline } from "react-icons/io5";
+import { IoCartOutline } from "react-icons/io5";
+import { FaRegUser } from "react-icons/fa6";
+import { CiHeart } from "react-icons/ci";
 
 const Nav = () => {
   return (
@@ -26,6 +29,8 @@ const Nav = () => {
                 </ul>
 
 
+                <div className="flex">
+
                 <div className="input relative  w-[270px] h-[50px] border-[2px] ">
                     <input type="text" placeholder='What are you looking for ? ' className='w-full h-full bg-[#F5F5F5] pl-[10px] pr-[35px] font-poppins rounded-[2px]'  />
                     <IoSearchOutline className='absolute right-[10px] top-[15px] w-[20px]  h-[20px] color-black' />
@@ -33,6 +38,28 @@ const Nav = () => {
 
                 </div>
 
+                <ul className='flex text-[25px] gap-4 mx-4 py-3 px-2'>
+                    <li ><Link  to='/love'>  <CiHeart /></Link></li>
+                    <li ><Link to='/addtocart'> <IoCartOutline /></Link></li>
+                    <li ><Link to='/admin'><FaRegUser className='text-[20px]' /></Link></li>
+                </ul>
+
+              
+               
+                
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+               
 
 
 
