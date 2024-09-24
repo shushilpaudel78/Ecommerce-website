@@ -35,7 +35,7 @@ const Login = () => {
 
 
                                 <div className="flex my-[20px] justify-between">
-                                <button className='bg-[#DB4444] rounded-[5px]  hover:bg-violet-600 text-white font-poppins px-[20px] py-[10px] text-[20px] float-end mx-[10px] '>Login</button>
+                                <button className='bg-[#DB4444] rounded-[5px]  hover:bg-violet-600 text-white font-poppins px-[20px] py-[10px] text-[16px] float-end mx-[10px] '>Login</button>
                                 <Link className='mx-[13px] mt-[10px]'>Forget Password</Link>
                                 </div>
 

@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <>
 
-    <div className="w-full h-full py-10">
+    <div className="w-full h-full py-10 px-[5px]">
         <div className=" max-w-[1200px] m-auto">
 
             <div className="w-full h-auto flex justify-between items-center">
@@ -16,8 +16,9 @@ const Nav = () => {
                 </div>
 
                 <ul className='flex gap-[20px] font-poppins '>
-                    <li><Link>Home</Link></li>
-                    <li><Link>Contact</Link></li>
+
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/contact'>Contact</Link></li>
                     <li><Link>About</Link></li>
                     <li><Link>Sign Up</Link></li>
                     
@@ -25,7 +26,7 @@ const Nav = () => {
                 </ul>
 
 
-                <div className="input relative  w-[270px] h-[50px] border-[2px]">
+                <div className="input relative  w-[270px] h-[50px] border-[2px] ">
                     <input type="text" placeholder='What are you looking for ? ' className='w-full h-full bg-[#F5F5F5] pl-[10px] pr-[35px] font-poppins rounded-[2px]'  />
                     <IoSearchOutline className='absolute right-[10px] top-[15px] w-[20px]  h-[20px] color-black' />
 

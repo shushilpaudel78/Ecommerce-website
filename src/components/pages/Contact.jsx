@@ -1,19 +1,26 @@
 import React from 'react'
 import Nav from '../Nav'
-import Login from '../Login'
 import Footer from '../Footer'
+import Signup from '../Signup'
 
-const Home = () => {
+const Contact = () => {
   return (
     <>
 
-
     <Nav />
-    <Login />
+
+    
+
+    <Signup />
+
+
     <Footer />
-          
+
+
+
+      
     </>
   )
 }
 
-export default Home
+export default Contact

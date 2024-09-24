@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <>
 
-        <div className="w-full h-full py-[40px] bg-black  text-[#FAFAFA]">
+        <div className="w-full h-full py-[40px] bg-black  text-[#FAFAFA] p-[5px]">
         <div className="max-w-[1200px] m-auto">
 
             <div className="flex w-full h-auto justify-start flex-wrap  text-[#FAFAFA] leading-[40px]">
