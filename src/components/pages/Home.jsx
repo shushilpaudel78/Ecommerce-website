@@ -1,16 +1,17 @@
 import React from 'react'
-import Nav from '../Nav'
-import Login from '../Login'
-import Footer from '../Footer'
+import Product from './Product'
+
 
 const Home = () => {
   return (
     <>
 
+    <h1>From home page</h1>
 
-    <Nav />
-    <Login />
-    <Footer />
+    <Product  />
+
+
+ 
           
     </>
   )

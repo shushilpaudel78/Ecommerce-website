@@ -48,7 +48,7 @@ const Createid = () => {
 
                                     <div className="flex">
                                     <p> Already have Account ? </p>
-                                    <Link className='mx-[5px]'>Log In</Link>
+                                    <Link className='mx-[5px]' to='/login'>Log In</Link>
 
 
                                     </div>

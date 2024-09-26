@@ -2,7 +2,7 @@ import React from 'react'
 import mbimg from '../assets/img/mobile.png'
 import { Link } from 'react-router-dom'
 
-const Login = () => {
+const LoginForm = () => {
     return (
         <>
 
@@ -73,4 +73,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default LoginForm
