@@ -10,12 +10,12 @@ const Footer = () => {
   return (
     <>
 
-        <div className="w-full h-full py-[40px] bg-black  text-[#FAFAFA] p-[5px]">
+        <div className="w-full h-full py-[40px] bg-black  text-[#FAFAFA] p-[5px] lg:px-[20px]">
         <div className="max-w-[1200px] m-auto">
 
             <div className="flex w-full h-auto justify-start flex-wrap  text-[#FAFAFA] leading-[40px]">
 
-                <div className="w-[20%] leading-[40px] ">
+                <div className="w-[20%] leading-[40px] lg:w-[30%] md:w-[50%] ">
                     <h1 className='font-poopins text-[24px] leading-[60px]'>Exclusive</h1>
                     <h3 className='text-[16px]'>Subscribe</h3>
                     <p className='text-[16px]'>Get 10% off your first order</p>
@@ -29,7 +29,7 @@ const Footer = () => {
                 </div>
 
 
-                <div className="w-[20%] leading-[40px]">
+                <div className="w-[20%] leading-[40px]  lg:w-[30%]  md:w-[50%] sm:w-[100%]">
                     <h1 className='font-poopins text-[25px] leading-[60px]'>Support</h1>
                     <p className='w-[70%] leading-[20px] pt-[7px]'>111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.</p>
                     <p>exclusive@gmail.com</p>
@@ -37,7 +37,7 @@ const Footer = () => {
                 </div>
 
 
-                <div className="w-[20%] leading-[40px]">
+                <div className="w-[20%] leading-[40px] lg:w-[30%] md:w-[50%] sm:w-[100%]">
                     <h1 className='font-poopins text-[24px] leading-[60px]' >Account</h1>
 
                     <ul className='flex  flex-col gap-[2px]'>
@@ -52,7 +52,7 @@ const Footer = () => {
 
                 </div>
 
-                <div className="w-[20%] leading-[40px]">
+                <div className="w-[20%] leading-[40px] lg:w-[30%] md:w-[50%] sm:w-[100%]">
                     <h1 className='font-poopins text-[24px] leading-[60px]'  >Quick  link</h1>
 
 
@@ -68,7 +68,7 @@ const Footer = () => {
                 </div>
 
 
-                <div className="w-[20%] leading-[40px]">
+                <div className="w-[20%] leading-[40px] lg:w-[30%] md:w-[50%] sm:w-[100%]">
                     <h1 className='font-poopins text-[24px] leading-[60px]' >Download App</h1>
                     <p>Save $3 with App New User Only</p>
 
