@@ -1,5 +1,5 @@
 import React from 'react'
-import mbimg from '../assets/img/mobile.png'
+import mbimg from '/img/about/mobile.png'
 import { Link } from 'react-router-dom'
 import { FcGoogle } from "react-icons/fc";
 

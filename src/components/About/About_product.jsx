@@ -1,5 +1,5 @@
 import React from 'react'
-import shopIcon from '../assets/img/shop_icon.png'
+import shopIcon from '/img/about/shop_icon.png'
 
 const About_product = () => {
   return (

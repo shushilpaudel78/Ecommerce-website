@@ -1,9 +1,9 @@
 import React from 'react'
 import { BsSendArrowDown } from "react-icons/bs";
 import { Link } from 'react-router-dom';
-import appimg from '../assets/img/download-appstore.png'
-import gogimg from '../assets/img/GooglePlay.png'
-import qimg from '../assets/img/qrcode.png'
+import appimg from '/img/footer/AppStore.png'
+import gogimg from '/img/footer/GooglePlay.png'
+import qimg from '/img/footer/qrcode.png'
 
 
 const Footer = () => {

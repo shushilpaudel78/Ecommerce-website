@@ -6,12 +6,9 @@ const Home = () => {
   return (
     <>
 
-    <h1>From home page</h1>
-
     <Product  />
 
 
- 
           
     </>
   )

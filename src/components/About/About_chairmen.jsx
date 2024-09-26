@@ -1,5 +1,5 @@
 import React from 'react'
-import cha from '../assets/img/chair2.png'
+import cha from '/img/about/chair2.png'
 import { Link } from 'react-router-dom'
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";

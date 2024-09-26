@@ -1,5 +1,5 @@
 import React from 'react'
-import bus from '../assets/img/bus.png'
+import bus from '/img/about/bus.png'
 
 const About_last_cart = () => {
     return (
