@@ -12,7 +12,7 @@ const Login = () => {
 
                     <div className="flex flex-wrap w-full h-auto">
 
-                        <div className="w-[60%]">
+                        <div className="w-[60%] lg:hidden">
 
                             <div className="w-full h-full truncate">
                                 <img src={mbimg} alt="mobile image " className='w-full h-full object-cover ' />
@@ -21,9 +21,9 @@ const Login = () => {
 
                         </div>
 
-                        <div className="w-[40%]">
+                        <div className="w-[40%] lg:w-[100%] lg:p-[10px] ">
 
-                            <div className="flex flex-col w-full h-full mt-[150px] font-poppins pl-[100px] pr-[20px]">
+                            <div className="flex flex-col w-full h-full mt-[150px] font-poppins pl-[100px] pr-[20px] lg:mt-[20px]  md:pl-[30px] sm:pl-[20px] sm:mt-[10px]">
 
                                 <h1 className='pt-[20px] font-poppins text-[36px] leading-[50px]'>Log in to Exclusive</h1>
                                 <p className='font-poppins text-[16px] leading-[50px] my-[10px]'>Enter your details below</p>

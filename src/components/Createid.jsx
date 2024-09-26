@@ -14,18 +14,18 @@ const Createid = () => {
 
                     <div className="flex flex-wrap w-full h-auto">
 
-                        <div className="w-[60%]">
+                        <div className="w-[60%] lg:hidden">
 
-                            <div className="w-full h-full truncate">
+                            <div className="w-full h-full truncate ">
                                 <img src={mbimg} alt="mobile image " className='w-full h-full object-cover ' />
 
                             </div>
 
                         </div>
 
-                        <div className="w-[40%]">
+                        <div className="w-[40%] lg:w-[100%]">
 
-                            <div className="flex flex-col w-full h-full mt-[120px] font-poppins pl-[100px] pr-[20px]">
+                            <div className="flex flex-col w-full h-full mt-[120px] font-poppins pl-[100px] pr-[20px] lg:mt-[20px] lg:pl-[20px]">
 
                                 <h1 className='pt-[20px] font-poppins text-[36px] leading-[50px]'>Create an account</h1>
                                 <p className='font-poppins text-[16px] leading-[50px] my-[10px]'>Enter your details below</p>
