@@ -183,6 +183,8 @@ const Product_selling = () => {
 
                                 <button className='w-full py-[10px] text-white bg-black font-poppins text-[16px]'>Add to cart</button>
 
+                
+
 
                             </div>
 

@@ -7,6 +7,7 @@ import Product_time from '../product/Product_time'
 import Product_viewproduct from '../product/Product_viewproduct'
 import Product_catagory from '../product/Product_catagory'
 import Product_selling from '../product/Product_selling'
+import Product_speaker from '../product/Product_speaker'
 
 const Product = () => {
     return (
@@ -18,6 +19,11 @@ const Product = () => {
             <Product_viewproduct />
             <Product_catagory />
             <Product_selling />
+            <Product_speaker />
+
+        
+
+            
 
 
 
