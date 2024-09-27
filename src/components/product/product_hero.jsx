@@ -1,8 +1,10 @@
 import React from 'react'
-import Product_sidebar from './product_sidebar'
+import Product_sidebar from './Product_sidebar'
 import applogo from '/img/product/applelogo.png'
+import applephoto from '/img/product/applephoto.png'
+import { FaArrowRight } from "react-icons/fa";
 
-const product_hero = () => {
+const Product_hero = () => {
     return (
         <>
 
@@ -21,15 +23,15 @@ const product_hero = () => {
 
                                 <div className="w-[50%]">
 
-                                    <div className="flex flex-col">
-                                        <div className="flex items-center gap-2">
+                                    <div className="flex flex-col pt-[40px] pl-[80px]">
+                                        <div className="flex items-center gap-9">
                                             <div className="w-[40px] h-[49px]"><img src={applogo} alt="logo" /></div>
                                             <p className=' font-poppins text-[16px] font-medium '>Iphone 14 users</p>
                                         </div>
 
                                         <h1  className='font-poppins text-[48px] font-medium '>Up to 10% off Voucher</h1>
 
-                                        <button>Shop Now</button>
+                                        <button className='flex items-center border-b-2 gap-4 w-[110px] pb-[10px]  py-[30px]'>Shop Now  <FaArrowRight  /></button>
 
                                     </div>
 
@@ -37,7 +39,9 @@ const product_hero = () => {
                                 </div>
 
                                 <div className="w-[50%]">
-                                    .
+
+
+                                    <div className="w-[100%] h-[352]"><img src={applephoto} alt="iphone  photo"  className='w-full h-full object-cover'/></div>
 
                                 </div>
 
@@ -63,4 +67,4 @@ const product_hero = () => {
     )
 }
 
-export default product_hero
+export default Product_hero

@@ -1,12 +1,12 @@
 import React from 'react'
 // import {Link} from 'react-router-dom'
 
-const product_sidebar = () => {
+const Product_sidebar = () => {
   return (
     <>
     <div className="w-full h-auto">
 
-        <ul className='flex flex-col gap-[10px] font-poppins text-[16px] font-normal'>
+        <ul className='flex flex-col gap-[13px] font-poppins text-[16px] font-normal py-[3px]'>
             
             <li>Woman Fashion </li>
             <li>Man Fashion</li>
@@ -32,4 +32,4 @@ const product_sidebar = () => {
   )
 }
 
-export default product_sidebar
+export default Product_sidebar

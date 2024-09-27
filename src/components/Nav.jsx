@@ -8,20 +8,15 @@ import { IoReorderThreeOutline } from "react-icons/io5";
 
 const Nav = () => {
 
-//     const NavBar = () => {
-//   // Step 1: Set up state
-//   const [isOpen, setIsOpen] = useState(false);
 
-//   // Step 2: Function to toggle the state
-//   const toggleMenu = () => {
-//     setIsOpen(!isOpen);
-//   };
 
-   
+
+
+
     return (
         <>
 
-            <div className="w-full h-full py-10 px-[5px]">
+            <div className="w-full h-full py-[20px] px-[5px] ">
                 <div className=" max-w-[1200px] m-auto">
 
                     <div className="w-full h-auto flex justify-between items-center md:justify-end ">
@@ -30,7 +25,10 @@ const Nav = () => {
                             <h1 className='font-poppins uppercase font-bold text-[23px]'>Swattai</h1>
                         </div>
 
-                        <ul className="flex gap-[20px] font-poppins ">
+                        <ul className=" md:flex md:items-center md:space-x-4 flex gap-[20px] font-poppins">
+                            
+
+
 
                             <li><Link to='/'>Home</Link></li>
                             <li><Link to='/contact'>Contact</Link></li>
@@ -59,7 +57,7 @@ const Nav = () => {
 
 
 
-                            <button > <IoReorderThreeOutline className='text-[30px] m-[7px] hidden md:block' /> </button>
+                            <button onClick="" > <IoReorderThreeOutline className='text-[30px] m-[7px] hidden md:block' /> </button>
 
 
 
