@@ -9,6 +9,7 @@ import Product_catagory from '../product/Product_catagory'
 import Product_selling from '../product/Product_selling'
 import Product_speaker from '../product/Product_speaker'
 import Product_ours from '../product/Product_ours'
+import Product_features from '../product/Product_features'
 
 const Product = () => {
     return (
@@ -22,6 +23,7 @@ const Product = () => {
             <Product_selling />
             <Product_speaker />
             <Product_ours />
+            <Product_features />
 
             
 

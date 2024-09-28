@@ -385,6 +385,13 @@ const Product_ours = () => {
 
 
                     </div>
+
+                    <div className='flex justify-center my-[10px]'>
+                        <button className='font-poopins px-[20px] py-[10px] bg-[#DB4444] text-[16px] rounded-[5px] text-white'>View All Products</button>
+                    </div>
+
+
+
                 </div>
 
             </div>
