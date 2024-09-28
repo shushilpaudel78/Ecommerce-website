@@ -7,9 +7,7 @@ const Home = () => {
     <>
 
     <Product  />
-
-
-          
+ 
     </>
   )
 }
