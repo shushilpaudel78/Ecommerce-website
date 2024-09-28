@@ -29,7 +29,10 @@ const Product_features = () => {
 
 
 
-                    
+
+                    <div className="flex">
+                        
+                    </div>
 
 
 
