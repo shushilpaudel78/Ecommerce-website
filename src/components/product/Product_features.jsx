@@ -1,6 +1,5 @@
 import React from 'react'
-import { FaArrowLeft } from "react-icons/fa6";
-import { FaArrowRight } from "react-icons/fa6";
+import blackjoystick from '/img/product/joystickblack.png'
 
 const Product_features = () => {
     return (
@@ -32,8 +31,30 @@ const Product_features = () => {
 
                     <div className="flex">
 
+                        <div className="w-[50%] h-auto">
 
-                        
+                            <div className='w-full h-auto relative'>
+
+                            <div className="pic w-[570px] h-[600px]" >
+
+                                <img src={blackjoystick} alt="img" className='w-full h-full object-cover'  />
+                            </div>
+
+                            <div className='absolute flex'>
+                                <h1>PlayStation 5</h1>
+                                <p> Black and White version of the PS5 coming out on sale.</p>
+                                
+                            </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+
+
                         
                     </div>
 
