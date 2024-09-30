@@ -44,11 +44,11 @@ const Product_features = () => {
                                     <img src={blackjoystick} alt="img" className='w-full h-full object-cover' />
                                 </div>
 
-                                <div className='absolute flex bottom-[30px] text-white flex-col'>
+                                <div className='absolute flex bottom-[30px] left-5 text-white flex-col'>
 
                                     <h1 className='text-[24px] font-poppins font-normal' >PlayStation 5</h1>
                                     <p className='text-[14px] font-poppins '> Black and White version of the PS5 coming out on sale.</p>
-                                    <button className='left'>Shop Now</button>
+                                    <button className='text-start border-b-[2px] max-w-[80px] text-[16px] font-poppins'>Shop Now</button>
 
 
                                 </div>
@@ -67,10 +67,10 @@ const Product_features = () => {
                                     <img src={girlsblack} alt="Girl img" className='w-full h-full object-cover' />
                                 </div>
 
-                                <div className='absolute flex bottom-[34px] text-white flex-col'>
+                                <div className='absolute flex bottom-[34px] left-5 text-white flex-col'>
                                     <h1 className='text-[24px] font-poppins font-normal' >Women’s Collections5</h1>
                                     <p className='text-[14px] font-poppins '> Featured woman collections that give you another vibe.</p>
-                                    <button>Shop Now</button>
+                                    <button className='text-start border-b-[2px] max-w-[80px] text-[16px] font-poppins'>Shop Now</button>
 
                                 </div>
 
@@ -78,7 +78,7 @@ const Product_features = () => {
                             </div>
 
 
-                            <div className="w-full flex my-[20px] gap-6">
+                            <div className="w-full flex mt-[30px] gap-6">
 
                                 <div className="w-[50%]  relative">
                                     <div className='w-full h-auto bg-black'>
@@ -88,10 +88,10 @@ const Product_features = () => {
 
                                         </div>
 
-                                        <div className='absolute flex top-[34px] text-white flex-col'>
+                                        <div className='absolute flex bottom-[20px] left-5 text-white flex-col'>
                                             <h1 className='text-[24px] font-poppins font-normal' >Speakers</h1>
                                             <p className='text-[14px] font-poppins '>Amazon wireless speakers</p>
-                                            <button>Shop Now</button>
+                                            <button className='text-start border-b-[2px] max-w-[80px] text-[16px] font-poppins'>Shop Now</button>
 
                                         </div>
                                     </div>
@@ -110,10 +110,10 @@ const Product_features = () => {
                                         </div>
 
 
-                                        <div className='absolute flex top-[34px] text-white flex-col'>
+                                        <div className='absolute flex bottom-[20px] left-5 text-white flex-col'>
                                             <h1 className='text-[24px] font-poppins font-normal' >Perfume</h1>
                                             <p className='text-[14px] font-poppins '>GUCCI INTENSE OUD EDP</p>
-                                            <button>Shop Now</button>
+                                            <button className='border-b-[2px] text-start max-w-[80px] text-[16px] font-poppins'>Shop Now</button>
 
                                         </div>
 
