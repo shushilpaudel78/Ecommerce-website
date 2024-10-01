@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="w-full h-full py-[40px] bg-black  text-[#FAFAFA] p-[5px] lg:px-[20px]">
         <div className="max-w-[1200px] m-auto">
 
-            <div className="flex w-full h-auto justify-start flex-wrap  text-[#FAFAFA] leading-[40px]">
+            <div className="flex w-full h-auto justify-start flex-wrap  text-[#FAFAFA] leading-[40px] py-[10px]">
 
                 <div className="w-[20%] leading-[40px] lg:w-[30%] md:w-[50%] ">
                     <h1 className='font-poopins text-[24px] leading-[60px]'>Exclusive</h1>
