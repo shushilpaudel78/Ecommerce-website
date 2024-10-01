@@ -14,7 +14,7 @@ const About_chairmen = () => {
 
                     <div className="flex flex-wrap justify-start">
 
-                        <div className="w-[33.33%] py-[5px] flex flex-col gap-3">
+                        <div className="w-[33.33%] py-[5px] flex flex-col gap-3 md:w-[50%] sm:w-[100%]">
 
 
                             <div className="w-full h-[391] my-[20px] p-[10px]">
@@ -38,7 +38,7 @@ const About_chairmen = () => {
                         </div>
 
 
-                        <div className="w-[33.33%] py-[5px] flex flex-col gap-3">
+                        <div className="w-[33.33%] py-[5px] flex flex-col gap-3 md:w-[50%] sm:w-[100%]">
 
 
                             <div className="w-full h-[391] my-[20px] p-[10px]">
@@ -61,7 +61,7 @@ const About_chairmen = () => {
 
                         </div>
 
-                        <div className="w-[33.33%] py-[5px] flex flex-col gap-3">
+                        <div className="w-[33.33%] py-[5px] flex flex-col gap-3 md:w-[50%] sm:w-[100%]">
 
 
                             <div className="w-full h-[391] my-[20px] p-[10px]">
