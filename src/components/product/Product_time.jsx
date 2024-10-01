@@ -9,7 +9,7 @@ const Product_time = () => {
 
         <div className="max-w-[1200px] m-auto">
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 px-[10px]">
 
             <div className="w-[30px] h-[40px] bg-red-500" ></div>
             <p className='font-poppins  text-[16px] font-semibold'>Today's</p>
@@ -17,7 +17,7 @@ const Product_time = () => {
             </div>
 
 
-            <div className="flex justify-between items-center my-[20px]">
+            <div className="flex justify-between items-center my-[20px] px-[10px] sm:flex-col sm:gap-3 sm:my-0">
 
                 <h1 className='text-[30px] font-poppins font-semibold'>Flash  Sales</h1> 
 

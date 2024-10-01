@@ -40,9 +40,9 @@ const Product_speaker = () => {
 
                         <div className="w-[55%] h-auto">
 
-                            <div className="w-full h-auto">
+                            <div className="w-full h-auto mt-[80px]">
 
-                                <div className="w-[600px] h-[420px]"><img className="w-full h-full object-cover" src={Speaker} alt="Speaker" /></div>
+                                <div className="w-[90%] h-[320px]"><img className="w-full h-full object-cover" src={Speaker} alt="Speaker" /></div>
 
                             </div>
 
