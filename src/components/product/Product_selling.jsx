@@ -37,7 +37,7 @@ const Product_selling = () => {
 
 
 
-                        <div className="w-[25%]md:w-[50%] sm:w-[100%]">
+                        <div className="w-[25%] md:w-[50%] sm:w-[100%]">
 
                             <div className="bg-[#F5F5F5] mx-3 my-3">
 
