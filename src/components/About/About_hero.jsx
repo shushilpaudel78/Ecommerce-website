@@ -9,14 +9,14 @@ const About_hero = () => {
 
                 <div className="max-w-[1200px] m-auto">
 
-                    <p className='font-poppins text-[14px] my-[30px] text-left'> Home / About</p>
+                    <p className='font-poppins text-[14px] my-[30px] text-left md:my-[0px]'> Home / About</p>
 
 
-                    <div className="flex flex-wrap">
+                    <div className="flex flex-wrap ">
 
-                        <div className="w-[50%] h-auto">
+                        <div className="w-[50%] h-auto md:w-full">
                             <div className="flex flex-col mt-20">
-                                <h1 className='font-poppins text-[40px]  font-medium'>Our Story</h1>
+                                <h1 className='font-poppins text-[40px]  font-medium '>Our Story</h1>
                                 <p className='font-poppins text-[16px leading-[30px] my-[20px] p-[5px]'>Launced in 2015, Exclusive is South Asia’s premier online
                                     shopping makterplace with an active presense in Bangladesh.
                                     Supported by wide range of tailored marketing, data and
@@ -33,7 +33,7 @@ const About_hero = () => {
                         </div>
 
 
-                        <div className="w-[50%] h-auto">
+                        <div className="w-[50%] h-auto md:w-full">
 
                             <div className="h-full w-full">
                                 <img src={girl} alt="girl photo"  className=' h-full  w-full object-cover'/>
