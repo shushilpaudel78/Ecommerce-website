@@ -19,13 +19,13 @@ const Nav = () => {
             <div className="w-full h-full py-[20px] px-[5px] ">
                 <div className=" max-w-[1200px] m-auto">
 
-                    <div className="w-full h-auto flex justify-between items-center md:justify-end ">
+                    <div className="w-full h-auto flex justify-between items-center ">
 
                         <div className="logo">
                             <h1 className='font-poppins uppercase font-bold text-[23px]'>Swattai</h1>
                         </div>
 
-                        <ul className=" md:flex md:items-center md:space-x-4 flex gap-[20px] font-poppins">
+                        <ul className=" md:items-center md:space-x-4 flex gap-[20px] font-poppins md:flex md:flex-col md:absolute md:left-[10px] md:top-[100px] md:bg-white md:hidden">
                             
 
 
