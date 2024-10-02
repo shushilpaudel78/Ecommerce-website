@@ -1,8 +1,9 @@
 import React from 'react'
 import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
-import Our_cart from './Cart/Our_cart';
-import Ourn_cart from './Cart/Ourn_cart';
+import Our_cart from '../Cart/Our_cart';
+import Ourn_cart from '../Cart/Ourn_cart';
+import Red_button from '../Button/Red_button';
 
 const Product_ours = () => {
     return (
@@ -48,10 +49,13 @@ const Product_ours = () => {
 
 
                     </div>
-                    
+
 
                     <div className='flex justify-center my-[10px]'>
-                        <button className='font-poopins px-[20px] py-[10px] bg-[#DB4444] text-[16px] rounded-[5px] text-white'>View All Products</button>
+
+                        <Red_button  name="View All Products" />
+
+
                     </div>
 
 

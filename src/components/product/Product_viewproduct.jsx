@@ -1,6 +1,6 @@
 import React from 'react'
-
-import View_cart from './Cart/view_cart';
+import View_cart from '../Cart/view_cart';
+import Red_button from '../Button/Red_button';
 
 const Product_viewproduct = () => {
 
@@ -23,7 +23,9 @@ const Product_viewproduct = () => {
 
 
                         <div className="w-full flex justify-center my-10">
-                            <button className='bg-[#DB4444] text-white py-[10px] px-[20px] rounded-md font-poppins'>View All the product</button>
+
+                            <Red_button name="View All the product" />
+
                         </div>
 
 
