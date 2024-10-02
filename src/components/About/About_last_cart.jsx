@@ -1,5 +1,5 @@
 import React from 'react'
-import bus from '/img/about/bus.png'
+import Last_cart from '../Cart/About_cart/Last_cart'
 
 const About_last_cart = () => {
     return (
@@ -12,46 +12,19 @@ const About_last_cart = () => {
 
                     <div className="flex flex-wrap">
 
-
-                        <div className="w-[33.33%] flex flex-col  items-center   gap-[10px] md:w-[50%] sm:w-full my-[20px] sm:bg-[#f5f5f5] sm:py-[10px]">
-
-
-                            <div className="w-[80px] h-[80px]"><img src={bus} alt="image" className='w-full h-full object-contain' /></div>
-                            <h1 className='uppercase font-poppins text-[20px]  font-bold leading-[40px]'>FREE AND FAST DELIVERY</h1>
-                            <p className='text-[14px] font-poppins'>Free delivery for all orders over $140</p>
-
-
-                        </div>
-
-
-                        <div className="w-[33.33%] flex flex-col  items-center  gap-[10px] md:w-[50%] sm:w-full my-[20px] sm:bg-[#f5f5f5] sm:py-[10px]">
-
-
-                            <div className="w-[80px] h-[80px]"><img src={bus} alt="image" className='w-full h-full object-contain' /></div>
-                            <h1 className='uppercase font-poppins text-[20px]  font-bold leading-[40px]'>FREE AND FAST DELIVERY</h1>
-                            <p className='text-[14px] font-poppins'>Free delivery for all orders over $140</p>
-
-
-                        </div>
+                        <Last_cart />
+                        <Last_cart />
+                        <Last_cart />
+                        <Last_cart />
 
 
 
 
-                        <div className="w-[33.33%] flex flex-col  my-[20px]  items-center gap-[10px] md:w-[50%] sm:w-full sm:bg-[#f5f5f5] sm:py-[10px]">
 
 
-                            <div className="w-[80px] h-[80px]"><img src={bus} alt="image" className='w-full h-full object-contain' /></div>
-                            <h1 className='uppercase font-poppins text-[20px]  font-bold leading-[40px]'>FREE AND FAST DELIVERY</h1>
-                            <p className='text-[14px] font-poppins'>Free delivery for all orders over $140</p>
-
-
-                        </div>
-
-
+                        
+                     
                     </div>
-
-
-
 
 
                 </div>

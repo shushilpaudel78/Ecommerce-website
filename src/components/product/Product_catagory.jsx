@@ -38,6 +38,8 @@ const Product_catagory = () => {
                         <Catagory_cart />
                         <Catagory_cart />
                         <Catagory_cart />
+                        <Catagory_cart />
+
 
 
 
