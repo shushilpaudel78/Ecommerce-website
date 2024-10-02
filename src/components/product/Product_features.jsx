@@ -40,9 +40,9 @@ const Product_features = () => {
                             <div className='w-full h-auto relative pr-8 bg-white'>
                                 <div className="w-full bg-black h-full">
 
-                                    <div className=" w-[90%] h-[600px]" >
+                                    <div className=" w-[90%] h-[600px] sm:w-[300px]" >
 
-                                        <img src={blackjoystick} alt="img" className='w-full h-full object-cover' />
+                                        <img src={blackjoystick} alt="img" className='w-full h-full object-cove' />
                                     </div>
 
 
@@ -50,7 +50,7 @@ const Product_features = () => {
 
                                         <h1 className='text-[24px] font-poppins font-normal' >PlayStation 5</h1>
                                         <p className='text-[14px] font-poppins '> Black and White version of the PS5 coming out on sale.</p>
-                                        <button className='text-start border-b-[2px] max-w-[80px] text-[16px] font-poppins'>Shop Now</button>
+                                        <button className='text-start border-b-[2px] w-[80px] text-[16px] font-poppins'>Shop Now</button>
 
 
                                     </div>

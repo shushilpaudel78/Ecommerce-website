@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
-import Catagory_cart from '../Cart/Catagory_cart';
+import Catagory_cart from '../Cart/product _cart/Catagory_cart'
 
 const Product_catagory = () => {
     return (

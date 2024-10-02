@@ -6,7 +6,7 @@ const Product_sidebar = () => {
     <>
     <div className="w-full h-auto">
 
-        <ul className='flex flex-col gap-[13px] font-poppins text-[16px] font-normal py-[3px]'>
+        <ul className='flex flex-col gap-[13px] font-poppins text-[16px] font-normal py-[3px] sm:text-[14px] sm:gap-[18px]'>
             
             <li>Woman Fashion </li>
             <li>Man Fashion</li>

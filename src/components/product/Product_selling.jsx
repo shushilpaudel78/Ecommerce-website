@@ -1,5 +1,5 @@
 import React from 'react'
-import Selling_cart from '../Cart/Selling_cart'
+import Selling_cart from '../Cart/product _cart/Selling_cart'
 import Red_button from '../Button/Red_button'
 
 
@@ -25,7 +25,7 @@ const Product_selling = () => {
 
 
                         <div className="flex gap-[10px]">
-                            
+
                             <Red_button name="View All" />
 
                         </div>
