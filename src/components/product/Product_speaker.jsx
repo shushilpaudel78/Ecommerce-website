@@ -12,7 +12,7 @@ const Product_speaker = () => {
 
                         <div className="w-[45%] md:w-full">
 
-                            <div className="flex h-auto w-full flex-col ml-[40px] mt-[80px]">
+                            <div className="flex h-auto w-full flex-col ml-[40px] mt-[80px] md:ml-0">
                                 <p className='text-[16px] font-poppins text-[#00FF66] font-normal my-[10px]'>Categories</p>
 
                                 <h1 className='text-[48px] font-poppins font-semibold text-white w-[80%]'>Enhance Your Music Experience</h1>
