@@ -7,10 +7,10 @@ const Product_speaker = () => {
 
             <div className="w-full h-auto my-[20px] py-[20px] ">
                 <div className="max-w-[1200px] m-auto">
-                    <div className="flex bg-black p-[5px]">
+                    <div className="flex bg-black p-[5px] flex-wrap">
 
 
-                        <div className="w-[45%]">
+                        <div className="w-[45%] md:w-full">
 
                             <div className="flex h-auto w-full flex-col ml-[40px] mt-[80px]">
                                 <p className='text-[16px] font-poppins text-[#00FF66] font-normal my-[10px]'>Categories</p>
@@ -26,10 +26,7 @@ const Product_speaker = () => {
 
 
                                 </div>
-                                <div className="my-[40px]">
-                                    <button className='bg-[#00FF66] text-[white] px-[30px] py-[15px] rounded-[10px] font-poppins text-[16px]'>Buy Now</button>
 
-                                </div>
 
                             </div>
 
@@ -38,13 +35,18 @@ const Product_speaker = () => {
                         </div>
 
 
-                        <div className="w-[55%] h-auto">
+                        <div className="w-[55%] h-auto md:w-full">
 
                             <div className="w-full h-auto mt-[80px]">
 
                                 <div className="w-[90%] h-[320px]"><img className="w-full h-full object-cover" src={Speaker} alt="Speaker" /></div>
 
                             </div>
+
+                        </div>
+
+                        <div className="my-[40px]">
+                            <button className=' mx-9 bg-[#00FF66] text-[white] px-[30px] py-[15px] rounded-[10px] font-poppins text-[16px]'>Buy Now</button>
 
                         </div>
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
-import cellphone from '/img/product/cellphone.png'
+import Catagory_cart from './Cart/Catagory_cart';
 
 const Product_catagory = () => {
     return (
@@ -35,92 +35,9 @@ const Product_catagory = () => {
 
 
                     <div className=" w-full h-auto flex flex-wrap  px-[10px] ">
-
-
-                        <div className="w-[16.66%] h-auto hover:bg-[#DB4444] md:w-[20%] sm:w-[50%]">
-                            <div className="flex items-center justify-center  border-[2px] m-[10px]">
-
-                                <div className="w-[56px] h-[56px] m-[50px]"> <img className='w-full h-full object-cover' src={cellphone} alt="cellphone" /></div>
-
-
-                            </div>
-
-                        </div>
-
-
-                        <div className="w-[16.66%] h-auto hover:bg-[#DB4444] md:w-[20%] sm:w-[50%]">
-                            <div className="flex items-center justify-center  border-[2px] m-[10px]">
-
-                                <div className="w-[56px] h-[56px] m-[50px]"> <img className='w-full h-full object-cover' src={cellphone} alt="cellphone" /></div>
-
-
-                            </div>
-
-                        </div>
-
-
-
-                        <div className="w-[16.66%] h-auto hover:bg-[#DB4444] md:w-[20%] sm:w-[50%]">
-                            <div className="flex items-center justify-center  border-[2px] m-[10px]">
-
-                                <div className="w-[56px] h-[56px] m-[50px]"> <img className='w-full h-full object-cover' src={cellphone} alt="cellphone" /></div>
-
-
-                            </div>
-
-                        </div>
-
-
-
-                        <div className="w-[16.66%] h-auto hover:bg-[#DB4444] md:w-[20%] sm:w-[50%]">
-                            <div className="flex items-center justify-center  border-[2px] m-[10px]">
-
-                                <div className="w-[56px] h-[56px] m-[50px]"> <img className='w-full h-full object-cover' src={cellphone} alt="cellphone" /></div>
-
-
-                            </div>
-
-                        </div>
-
-
-
-
-                        <div className="w-[16.66%] h-auto hover:bg-[#DB4444] md:w-[20%] sm:w-[50%]">
-                            <div className="flex items-center justify-center  border-[2px] m-[10px]">
-
-                                <div className="w-[56px] h-[56px] m-[50px]"> <img className='w-full h-full object-cover' src={cellphone} alt="cellphone" /></div>
-
-
-                            </div>
-
-                        </div>
-
-
-
-
-                        <div className="w-[16.66%] h-auto hover:bg-[#DB4444] md:w-[20%] sm:w-[50%]">
-                            <div className="flex items-center justify-center  border-[2px] m-[10px]">
-
-                                <div className="w-[56px] h-[56px] m-[50px]"> <img className='w-full h-full object-cover' src={cellphone} alt="cellphone" /></div>
-
-
-                            </div>
-
-                        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                        <Catagory_cart />
+                        <Catagory_cart />
+                        <Catagory_cart />
 
 
 
