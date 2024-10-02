@@ -3,10 +3,8 @@ import View_cart from '../Cart/product _cart/View_cart';
 import Red_button from '../Button/Red_button';
 
 const Product_viewproduct = () => {
+    
 
-
-
-  
 
     return (
         <>
@@ -30,10 +28,6 @@ const Product_viewproduct = () => {
 
 
                     </div>
-
-
-
-
 
 
 
