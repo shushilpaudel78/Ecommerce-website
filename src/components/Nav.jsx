@@ -25,7 +25,7 @@ const Nav = () => {
                             <h1 className='font-poppins uppercase font-bold text-[23px]'>Swattai</h1>
                         </div>
 
-                        <ul className=" md:items-center md:space-x-4 flex gap-[20px] font-poppins md:flex md:flex-col md:absolute md:left-[10px] md:top-[100px] md:bg-white md:hidden">
+                        <ul className=" md:items-center md:space-x-4 flex gap-[20px] font-poppins md:flex-col md:absolute md:left-[10px] md:top-[100px] md:bg-white md:hidden">
                             
 
 
@@ -50,7 +50,7 @@ const Nav = () => {
 
                             <ul className='flex text-[25px] gap-4 mx-4 py-3 px-2' id='myNav'>
                                 <li ><Link to='/love'>  <CiHeart /></Link></li>
-                                <li ><Link to='/addtocart'> <IoCartOutline /></Link></li>
+                                <li ><Link to='/addcart'> <IoCartOutline /></Link></li>
                                 <li ><Link to='/admin'><FaRegUser className='text-[20px]' /></Link></li>
                             </ul>
 

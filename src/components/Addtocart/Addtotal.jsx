@@ -3,7 +3,9 @@ import React from 'react'
 const Addtotal = () => {
   return (
     <>
-    <h1>From add to total</h1>
+    <div className="flex">
+      <h1>Helllo</h1>
+    </div>
       
     </>
   )

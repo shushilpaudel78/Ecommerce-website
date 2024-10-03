@@ -2,6 +2,7 @@ import React from 'react'
 import simage from '/img/Addtocart/Monitor-Cart-Small.png'
 import Ru_button from '../Button/Ru_button'
 import Red_button from '../Button/Red_button'
+import Addtotal from './Addtotal'
 
 const Addtable = () => {
     return (
@@ -58,7 +59,7 @@ const Addtable = () => {
 
                     <div className="flex justify-between my-[30px]">
 
-                        <Ru_button name='Return To Shop' />
+                        <Ru_button name="Return to shop" />
                         <Ru_button name='Update cart' />
 
 
@@ -72,10 +73,13 @@ const Addtable = () => {
 
                         </div>
 
-                        <div className="w-[50%]">
+                        <div className="w-[50%] border-[2px] border-black">
 
                             
 
+                            <Addtotal />
+
+                            
 
                         </div>
 
