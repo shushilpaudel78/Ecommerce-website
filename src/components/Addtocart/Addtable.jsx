@@ -67,19 +67,24 @@ const Addtable = () => {
 
                     <div className="flex justify-between my-[30px]">
 
-                        <div className="flex w-[50%] gap-20">
-                            <input type="text" className='border-[3px] font-poppins text-[16px] px-[10px]' placeholder='Coupan Code' />
-                            <Red_button name="Apply Coupan" />
+                        <div className="w-[50%] ">
+                            <div className="flex gap-20 ">
+
+                                <input type="text" className='border-[3px] font-poppins text-[16px] px-[10px]' placeholder='Coupan Code' />
+                                <Red_button name="Apply Coupan" />
+
+                            </div>
+
 
                         </div>
 
-                        <div className="w-[50%] border-[2px] border-black">
+                        <div className="w-[50%] ">
 
-                            
+
 
                             <Addtotal />
 
-                            
+
 
                         </div>
 
