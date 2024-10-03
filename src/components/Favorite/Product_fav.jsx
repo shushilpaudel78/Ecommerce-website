@@ -11,6 +11,13 @@ const Product_fav = () => {
 
                 <div className="max-w-[1200px] m-auto">
 
+                    <div className="flex justify-between my-5">
+
+                        <p className='text-[16px] font-poppins font-normal'>Wishlist (4)</p>
+                        <Ru_button name="Move All To Blog" />
+
+                    </div>
+
 
 
 
@@ -26,10 +33,21 @@ const Product_fav = () => {
                     </div>
 
 
-                    <div className="flex items-center gap-3 px-[10px]">
 
-                        <div className="w-[30px] h-[40px] bg-red-500" ></div>
-                        <p className='font-poppins  text-[16px] font-semibold'>Just For You</p>
+                    <div className="flex items-center  justify-between px-[10px] py-[20px] my-10">
+
+
+                        <div className="flex gap-3 items-center  ">
+
+                            <div className="w-[30px] h-[40px] bg-red-500" ></div>
+                            <p className='font-poppins  text-[16px] font-semibold'>Just For You</p>
+
+
+                        </div>
+
+                        <Ru_button name="See All" />
+
+
 
                     </div>
 
