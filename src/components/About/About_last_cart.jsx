@@ -15,14 +15,6 @@ const About_last_cart = () => {
                         <Last_cart />
                         <Last_cart />
                         <Last_cart />
-                        <Last_cart />
-
-
-
-
-
-
-                        
                      
                     </div>
 

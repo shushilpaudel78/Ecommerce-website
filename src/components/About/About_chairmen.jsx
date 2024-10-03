@@ -15,7 +15,6 @@ const About_chairmen = () => {
                         <Chairmen_cart />
                         <Chairmen_cart />
 
-
                     </div>
 
 

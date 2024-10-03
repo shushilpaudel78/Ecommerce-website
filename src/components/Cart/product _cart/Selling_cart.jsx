@@ -9,7 +9,7 @@ const Selling_cart = () => {
         <>
 
 
-            <div className="w-[25%]  md:w-[50%] sm:w-[100%]">
+            <div className="w-[25%]  md:w-[50%] sm:w-[100%] hover:scale-105">
 
                 <div className="bg-[#F5F5F5] mx-3 my-3">
 
