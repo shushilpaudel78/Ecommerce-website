@@ -49,7 +49,7 @@ const Nav = () => {
                             </div>
 
                             <ul className='flex text-[25px] gap-4 mx-4 py-3 px-2' id='myNav'>
-                                <li ><Link to='/love'>  <CiHeart /></Link></li>
+                                <li ><Link to='/favorite'>  <CiHeart /></Link></li>
                                 <li ><Link to='/addcart'> <IoCartOutline /></Link></li>
                                 <li ><Link to='/admin'><FaRegUser className='text-[20px]' /></Link></li>
                             </ul>

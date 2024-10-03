@@ -7,6 +7,7 @@ import About from './components/pages/About'
 import Signup from './components/pages/Signup'
 import Login from './components/pages/Login'
 import Addtocart from './components/pages/Addtocart'
+import Favorite from './components/pages/Favorite'
 
 function App() {
 
@@ -21,8 +22,12 @@ function App() {
           <Route element={<Signup />}  path='/signup' />
           <Route element={<Login />}  path='/login' />
           <Route element={<Addtocart />}  path='/addcart' />
+          <Route element={<Favorite />}  path='/favorite' />
 
 
+          
+
+        
 
         </Routes>
 
