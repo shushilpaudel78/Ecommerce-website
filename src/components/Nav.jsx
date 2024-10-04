@@ -35,10 +35,10 @@ const Nav = () => {
 
 
 
-                                <li><Link to='/'>Home</Link></li>
-                                <li><Link to='/contact'>Contact</Link></li>
-                                <li><Link to='/about'>About</Link></li>
-                                <li><Link to='/signup'>Sign Up</Link></li>
+                                <li><Link to='/' className='active:text-red-400'>Home</Link></li>
+                                <li><Link to='/contact'className='active:text-red-400'>Contact</Link></li>
+                                <li><Link to='/about' className='active:text-red-400'>About</Link></li>
+                                <li><Link to='/signup' className='active:text-red-400'>Sign Up</Link></li>
 
 
                             </ul>:null
@@ -55,9 +55,9 @@ const Nav = () => {
                             </div>
 
                             <ul className='flex text-[25px] gap-4 mx-4 py-3 px-2' id='myNav'>
-                                <li ><Link to='/favorite'>  <CiHeart /></Link></li>
-                                <li ><Link to='/addcart'> <IoCartOutline /></Link></li>
-                                <li ><Link to='/profile'><FaRegUser className='text-[20px]' /></Link></li>
+                                <li ><Link to='/favorite' className='active:text-red-400'>  <CiHeart /></Link></li>
+                                <li ><Link to='/addcart' className='active:text-red-400'> <IoCartOutline /></Link></li>
+                                <li ><Link to='/profile' className='active:text-red-400'><FaRegUser className='text-[20px]' /></Link></li>
                             </ul>
 
 

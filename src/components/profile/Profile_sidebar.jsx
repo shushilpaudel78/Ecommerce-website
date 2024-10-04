@@ -6,7 +6,7 @@ const Profile_sidebar = () => {
         <>
             <div className="flex flex-col font-poppins text-[16px] font-normal gap-4 my-4">
 
-                <p>Manage My Account</p>
+                <p className='font-poppins font-semibold '>Manage My Account</p>
 
 
                 <ul className='px-6 text-[#777272]'>
@@ -20,7 +20,7 @@ const Profile_sidebar = () => {
 
                 </ul>
 
-                <p>My Orders</p>
+                <p className='font-poppins font-semibold '>My Orders</p>
 
 
                 <ul className='px-6 text-[#777272]'>
@@ -30,9 +30,7 @@ const Profile_sidebar = () => {
 
                 </ul>
 
-
-
-                <p>My WishList</p>
+                <p className='font-poppins font-semibold '>My WishList</p>
 
             </div>
 

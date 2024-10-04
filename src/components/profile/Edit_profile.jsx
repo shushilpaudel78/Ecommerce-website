@@ -1,4 +1,6 @@
 import React from 'react'
+import Red_button from '../Button/Red_button'
+import Ru_button from '../Button/Ru_button'
 
 const Edit_profile = () => {
     return (
@@ -9,36 +11,47 @@ const Edit_profile = () => {
 
                 <div className="flex flex-wrap font-poppins text-[16px] font-normal">
 
-                    <div className="flex w-[50%] flex-col my-6 pr-4">
+                    <div className="flex w-[50%] flex-col my-6 pr-5 md:w-full">
                         <p>Firstname</p>
-                        <input type="text" className='bg-[#F5F5F5] h-[50px]' />
+                        <input type="text" className='bg-[#F5F5F5] h-[50px] px-[10px] ' placeholder='Shushil' />
                     </div>
 
-                    <div className="flex w-[50%] flex-col my-6">
+                    <div className="flex w-[50%] flex-col my-6 pr-5 md:w-full">
                         <p>Lastname</p>
-                        <input type="text" className='bg-[#F5F5F5] h-[50px]' />
+                        <input type="text" className='bg-[#F5F5F5] h-[50px] px-[10px]' placeholder='Paudel' />
                     </div>
 
-                    <div className="flex w-[50%] flex-col my-6 pr-4">
+                    <div className="flex w-[50%] flex-col my-6 pr-5 md:w-full">
                         <p>Email</p>
-                        <input type="text" className='bg-[#F5F5F5] h-[50px]' />
+                        <input type="text" className='bg-[#F5F5F5] h-[50px] px-[10px] ' placeholder='sp@gmail.com' />
                     </div>
 
-                    <div className="flex w-[50%]  flex-col my-6">
+                    <div className="flex w-[50%]  flex-col my-6 pr-5 md:w-full">
                         <p>Address</p>
-                        <input type="text"  className='bg-[#F5F5F5] h-[50px]'/>
+                        <input type="text"  className='bg-[#F5F5F5] h-[50px] px-[10px]' placeholder='Chitwan'/>
                     </div>
 
 
-                    <div className="flex w-full  flex-col my-6 gap-4">
+                    <div className="flex w-full  flex-col my-6 gap-4 pr-5">
 
                         <h1 className='w-full'>Password Change</h1>
-                        <input type="text" className='bg-[#F5F5F5] h-[50px]' />
-                        <input type="text" className='bg-[#F5F5F5] h-[50px]' />
-                        <input type="text" className='bg-[#F5F5F5] h-[50px]' />
+                        <input type="text" placeholder='Current Password' className='bg-[#F5F5F5] h-[50px] px-[10px]' />
+                        <input type="text"  placeholder='New Password' className='bg-[#F5F5F5] h-[50px] px-[10px]' />
+                        <input type="text"placeholder='Confirm Password' className='bg-[#F5F5F5] h-[50px] px-[10px]' />
 
 
                     </div>
+
+
+                    <div className="flex gap-3 flex-end ">
+                        <Ru_button name="Cancel" />
+                        <Red_button name="Save Change" />
+
+
+                    </div>
+
+
+
 
 
 
