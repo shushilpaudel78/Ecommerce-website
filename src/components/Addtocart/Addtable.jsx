@@ -16,8 +16,8 @@ const Addtable = () => {
         },
         {
             id: 2,
-            image: "/img/Addtocart/computer.png",
-            product_name: "LCD Monitor",
+            image: "/img/product/keyboard.png",
+            product_name: "Giant Keyboard",
             product_price: "$345",
             total_price: "$456"
         }

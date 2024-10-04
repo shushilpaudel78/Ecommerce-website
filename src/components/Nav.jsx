@@ -9,6 +9,9 @@ import { IoReorderThreeOutline } from "react-icons/io5";
 const Nav = () => {
 
 
+    const [status, setStatus] = React.useState(true);
+
+
 
 
 
@@ -25,18 +28,21 @@ const Nav = () => {
                             <h1 className='font-poppins uppercase font-bold text-[23px]'>Swattai</h1>
                         </div>
 
-                        <ul className=" md:items-center md:space-x-4 flex gap-[20px] font-poppins md:flex-col md:absolute md:left-[10px] md:top-[100px] md:bg-white md:hidden">
-                            
+                        {status? 
+
+                            <ul className=" md:items-center md:space-x-4 flex gap-[20px] font-poppins md:flex-col md:absolute md:left-[10px] md:top-[100px] md:bg-white md:hidden">
 
 
 
-                            <li><Link to='/'>Home</Link></li>
-                            <li><Link to='/contact'>Contact</Link></li>
-                            <li><Link to='/about'>About</Link></li>
-                            <li><Link to='/signup'>Sign Up</Link></li>
+
+                                <li><Link to='/'>Home</Link></li>
+                                <li><Link to='/contact'>Contact</Link></li>
+                                <li><Link to='/about'>About</Link></li>
+                                <li><Link to='/signup'>Sign Up</Link></li>
 
 
-                        </ul>
+                            </ul>:null
+                        }
 
 
                         <div className="flex md:justify-end">
@@ -57,7 +63,7 @@ const Nav = () => {
 
 
 
-                            <button onClick="" > <IoReorderThreeOutline className='text-[30px] m-[7px] hidden md:block' /> </button>
+                            <button onClick={() => setStatus(!status)} > <IoReorderThreeOutline className='text-[30px] m-[7px] hidden md:block' /> </button>
 
 
 
