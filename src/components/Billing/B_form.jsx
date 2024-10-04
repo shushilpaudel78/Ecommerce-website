@@ -53,6 +53,10 @@ const B_form = () => {
 
 
                 </div>
+                <div className="flex gap-3 text-[16px] font-poppins  font-normal px-2 my-3">
+                    <input type="checkbox" name="" id="" className='scale-150 bg-red-600 border-red-600' />
+                    <p>Save this information for faster check-out next time</p>
+                </div>
 
             </div>
 

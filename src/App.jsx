@@ -9,6 +9,7 @@ import Login from './components/pages/Login'
 import Addtocart from './components/pages/Addtocart'
 import Favorite from './components/pages/Favorite'
 import Billing from './components/pages/Billing'
+import Profile from './components/pages/Profile'
 
 function App() {
 
@@ -25,6 +26,8 @@ function App() {
           <Route element={<Addtocart />}  path='/addcart' />
           <Route element={<Favorite />}  path='/favorite' />
           <Route element={<Billing />}  path='/billing' />
+          <Route element={<Profile />}  path='/profile' />
+
 
 
 
