@@ -13,8 +13,6 @@ const About_last_cart = () => {
                     <div className="flex flex-wrap">
 
                         <Last_cart />
-                        <Last_cart />
-                        <Last_cart />
                      
                     </div>
 

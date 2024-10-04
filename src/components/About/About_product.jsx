@@ -13,9 +13,6 @@ const About_product = () => {
 
 
             <Product_cart />
-            <Product_cart />
-            <Product_cart />
-            <Product_cart />
 
           </div>
 

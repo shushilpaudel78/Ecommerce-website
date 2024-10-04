@@ -42,9 +42,6 @@ const Product_ours = () => {
 
                     <div className="flex flex-wrap px-[10px]">
                         <Our_cart />
-                        <Ourn_cart />
-                        <Our_cart />
-                        <Ourn_cart />
 
 
 

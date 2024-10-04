@@ -36,12 +36,7 @@ const Product_catagory = () => {
 
                     <div className=" w-full h-auto flex flex-wrap  px-[10px] ">
                         <Catagory_cart />
-                        <Catagory_cart />
-                        <Catagory_cart />
-                        <Catagory_cart />
-
-
-
+                    
 
                     </div>
 

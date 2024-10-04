@@ -12,8 +12,7 @@ const About_chairmen = () => {
                     <div className="flex flex-wrap justify-start">
 
                         <Chairmen_cart />
-                        <Chairmen_cart />
-                        <Chairmen_cart />
+                    
 
                     </div>
 

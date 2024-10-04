@@ -53,7 +53,6 @@ const Product_fav = () => {
 
 
 
-
                     <div className="flex flex-wrap">
 
                         <Wishlist_cart />

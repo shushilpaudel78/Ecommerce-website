@@ -14,10 +14,7 @@ const Product_viewproduct = () => {
                     <div className="flex flex-wrap mx-[10px]">
 
                         <View_cart />
-                        <View_cart />
-                        <View_cart />
-                        <View_cart />
-
+                       
 
 
                         <div className="w-full flex justify-center my-10">
