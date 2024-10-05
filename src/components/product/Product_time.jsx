@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa6";
 const Product_time = () => {
   return (
     <>
-    <div className="w-full h-full my-[40px] py-[20px]">
+    <div className="w-full h-full my-[40px] py-[20px] sm:my-[0px]">
 
         <div className="max-w-[1200px] m-auto">
 

@@ -7,7 +7,7 @@ const Product_selling = () => {
     return (
         <>
 
-            <div className="w-full h-full my-[40px] py-[40px]">
+            <div className="w-full h-full my-[40px] py-[40px] sm:my-0 sm:py-3">
 
                 <div className="max-w-[1200px] m-auto">
 

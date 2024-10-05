@@ -8,7 +8,7 @@ import perfume from '/img/product/perfume.png'
 const Product_features = () => {
     return (
         <>
-            <div className="w-full h-auto">
+            <div className="w-full h-auto px-[10px]">
                 <div className="max-w-[1200px] m-auto">
 
 
@@ -25,42 +25,36 @@ const Product_features = () => {
 
                         <h1 className='text-[30px] font-poppins font-semibold'>New Arrival</h1>
 
-
-
                     </div>
 
 
 
 
 
-                    <div className="flex flex-wrap px-[10px] md:flex-col md:gap-[10px]">
+                    <div className="flex md:flex-wrap px-[10px] md:flex-col md:gap-[10px]">
 
-                        <div className="w-[50%] h-auto ">
+                        <div className="w-[50%] h-auto  md:w-full">
 
-                            <div className='w-full h-auto relative pr-8 bg-white'>
-                                <div className="w-full bg-black h-full">
-
-                                    <div className=" w-[90%] h-[600px] sm:w-[300px]" >
-
-                                        <img src={blackjoystick} alt="img" className='w-full h-full object-cove' />
-                                    </div>
+                            <div className="bg-black mr-8 relative md:mr-0">
 
 
-                                    <div className='absolute flex bottom-[30px] left-5 text-white flex-col'>
-
-                                        <h1 className='text-[24px] font-poppins font-normal' >PlayStation 5</h1>
-                                        <p className='text-[14px] font-poppins '> Black and White version of the PS5 coming out on sale.</p>
-                                        <button className='text-start border-b-[2px] w-[80px] text-[16px] font-poppins'>Shop Now</button>
+                                <div className="w-full h-[600px] sm:h-[400px]">  <img src={blackjoystick} alt="img" className='w-full h-full object-cover' /></div>
 
 
-                                    </div>
-
+                                <div className='absolute flex bottom-[30px] left-5 text-white flex-col'>
+                                    <h1 className='text-[24px] font-poppins font-normal' >PlayStation 5</h1>
+                                    <p className='text-[14px] font-poppins '> Black and White version of the PS5 coming out on sale.</p>
+                                    <button className='text-start border-b-[2px] w-[80px] text-[16px] font-poppins'>Shop Now</button>
                                 </div>
+
 
                             </div>
 
 
+
+
                         </div>
+
 
 
                         <div className="w-[50% h-auto] ">

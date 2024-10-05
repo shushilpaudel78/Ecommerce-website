@@ -9,7 +9,7 @@ const Product_ours = () => {
     return (
         <>
 
-            <div className="w-full h-auto my-[20px] py-[20px]" >
+            <div className="w-full h-auto my-[20px] py-[20px] sm:my-0" >
                 <div className="max-w-[1200px] m-auto">
 
 

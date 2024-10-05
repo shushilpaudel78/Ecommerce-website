@@ -19,7 +19,7 @@ const Nav = () => {
     return (
         <>
 
-            <div className="w-full h-full py-[20px] px-[5px] ">
+            <div className="w-full h-full py-[20px] px-[10px] sm:py-2 ">
                 <div className=" max-w-[1200px] m-auto">
 
                     <div className="w-full h-auto flex justify-between items-center ">
