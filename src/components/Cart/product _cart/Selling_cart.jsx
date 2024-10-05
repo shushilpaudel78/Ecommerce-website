@@ -84,7 +84,7 @@ const Selling_cart = () => {
                             </div>
 
 
-                            <div className="w-[190px] h-[180px] ml-10 "><img src={product.img} alt="product photo" className='w-full h-full object-cover' /></div>
+                            <div className="w-[190px] h-[180px] ml-10  sm:w-[250px] sm:h-[200px]"><img src={product.img} alt="product photo" className='w-full h-full object-cover' /></div>
 
                             <button className='w-full py-[10px] text-white bg-black font-poppins text-[16px]'>Add to cart</button>
 

@@ -6,7 +6,7 @@ const About_chairmen = () => {
     return (
         <>
 
-            <div className="w-full h-auto my-[60px] px-10">
+            <div className="w-full h-auto my-[60px] px-10 sm:my-0">
                 <div className="max-w-[1200px] m-auto">
 
                     <div className="flex flex-wrap justify-start">
