@@ -1,5 +1,4 @@
 import React from 'react'
-import simage from '/img/Addtocart/Monitor-Cart-Small.png'
 import Ru_button from '../Button/Ru_button'
 import Red_button from '../Button/Red_button'
 import Addtotal from './Addtotal'

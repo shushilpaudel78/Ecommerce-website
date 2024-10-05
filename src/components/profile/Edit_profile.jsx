@@ -13,26 +13,26 @@ const Edit_profile = () => {
 
                     <div className="flex w-[50%] flex-col my-6 pr-5 md:w-full">
                         <p>Firstname</p>
-                        <input type="text" className='bg-[#F5F5F5] h-[50px] px-[10px] ' placeholder='Shushil' />
+                        <input type="text" className='bg-[#F5F5F5] h-[50px] px-[10px] sm:pr-0' placeholder='Shushil' />
                     </div>
 
                     <div className="flex w-[50%] flex-col my-6 pr-5 md:w-full">
                         <p>Lastname</p>
-                        <input type="text" className='bg-[#F5F5F5] h-[50px] px-[10px]' placeholder='Paudel' />
+                        <input type="text" className='bg-[#F5F5F5] h-[50px] px-[10px] sm:pr-0' placeholder='Paudel' />
                     </div>
 
                     <div className="flex w-[50%] flex-col my-6 pr-5 md:w-full">
                         <p>Email</p>
-                        <input type="text" className='bg-[#F5F5F5] h-[50px] px-[10px] ' placeholder='sp@gmail.com' />
+                        <input type="text" className='bg-[#F5F5F5] h-[50px] px-[10px] sm:pr-0 ' placeholder='sp@gmail.com' />
                     </div>
 
                     <div className="flex w-[50%]  flex-col my-6 pr-5 md:w-full">
                         <p>Address</p>
-                        <input type="text"  className='bg-[#F5F5F5] h-[50px] px-[10px]' placeholder='Chitwan'/>
+                        <input type="text"  className='bg-[#F5F5F5] h-[50px] px-[10px] sm:pr-0' placeholder='Chitwan'/>
                     </div>
 
 
-                    <div className="flex w-full  flex-col my-6 gap-4 pr-5">
+                    <div className="flex w-full  flex-col my-6 gap-4 pr-5 sm:pr-0">
 
                         <h1 className='w-full'>Password Change</h1>
                         <input type="text" placeholder='Current Password' className='bg-[#F5F5F5] h-[50px] px-[10px]' />
@@ -43,7 +43,7 @@ const Edit_profile = () => {
                     </div>
 
 
-                    <div className="flex gap-3 flex-end ">
+                    <div className="flex gap-3 flex-end  flex-wrap">
                         <Ru_button name="Cancel" />
                         <Red_button name="Save Change" />
 

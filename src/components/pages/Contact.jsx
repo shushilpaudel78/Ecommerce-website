@@ -1,13 +1,15 @@
 import React from 'react'
 import Nav from '../Nav'
 import Footer from '../Footer'
+import Contact_index from '../contact/contact_index'
 const Contact = () => {
   return (
     <>
 
     <Nav />
+
+    <Contact_index />
     
-    <h1>From contact page</h1>
 
 
     <Footer />

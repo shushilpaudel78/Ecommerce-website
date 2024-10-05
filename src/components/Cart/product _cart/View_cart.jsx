@@ -1,5 +1,4 @@
 import React from 'react'
-import Product_photo from '/img/product/joystick.png'
 import { FaRegHeart } from "react-icons/fa";
 import { IoEyeSharp } from "react-icons/io5";
 import { CiStar } from "react-icons/ci";
