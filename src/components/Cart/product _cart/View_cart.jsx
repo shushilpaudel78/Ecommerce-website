@@ -12,19 +12,7 @@ import 'swiper/css';
 
 const View_cart = () => {
 
-    const AddtoStorage = (id, discount_p, img, name, price, previous_price, rating ) => {
-        const product = { id: id, discount_p: discount_p, name:name, img: img, price:price, previous_price:previous_price, rating:rating }
-        let storedProducts = JSON.parse(localStorage.getItem('products')) || [];
-        storedProducts.push(product);
-        localStorage.setItem('products', JSON.stringify(storedProducts));
-        document.getElementById('cartCount').innerText = storedProducts.length;
-    
-    
-        let productNames = storedProducts.map(product => product.name).join(', ');
-        document.getElementById('check_name').innerText = productNames;
-    
-    
-    }
+ 
 
     const products = [
         {
@@ -99,7 +87,7 @@ const View_cart = () => {
 
                             <div className="w-[190px] h-[180px] ml-10 "><img src={product.img} alt="product photo" className='w-full h-full object-cover' /></div>
 
-                            <button onClick={AddStorage(1,"50%","/img/product/joystick.png","HAVIT HV-G92 Gamepad","$120","$160","(90)")} className='w-full py-[10px] text-white bg-black font-poppins text-[16px]'>Add to cart</button>
+                            <button onClick="AddtoStorage(1, 'shushil', 'paudel')" className='w-full py-[10px] text-white bg-black font-poppins text-[16px]'>Add to cart</button>
 
 
                         </div>

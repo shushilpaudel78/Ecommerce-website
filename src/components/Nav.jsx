@@ -56,7 +56,12 @@ const Nav = () => {
 
                             <ul className='flex text-[25px] gap-4 mx-4 py-3 px-2' id='myNav'>
                                 <li ><Link to='/favorite' className='active:text-red-400'>  <CiHeart /></Link></li>
-                                <li ><Link to='/addcart' className='active:text-red-400'> <IoCartOutline /></Link></li>
+
+                                <li   className='relative'>
+                                    <p id='cartCount' className='bg-red-600 rounded-[100px] text-[10px] text-white  text-center p-[4px] absolute top-[-12px] right-[-12px]'>1</p>
+                                     <Link to='/addcart' className='active:text-red-400'>
+                                      <IoCartOutline /></Link></li>
+                              
                                 <li ><Link to='/profile' className='active:text-red-400'><FaRegUser className='text-[20px]' /></Link></li>
                             </ul>
 
