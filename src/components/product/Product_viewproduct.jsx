@@ -15,10 +15,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 
-
-
-
-
 const Product_viewproduct = () => {
 
 
@@ -37,16 +33,22 @@ const Product_viewproduct = () => {
                         <Swiper
                             // install Swiper modules
                             modules={[Navigation, Pagination, Scrollbar, A11y]}
-                            spaceBetween={1}
+                            spaceBetween={5}
                             slidesPerView={1}
                             navigation
                             pagination={{ clickable: true }}
                             scrollbar={{ draggable: true }}
                             onSwiper={(swiper) => console.log(swiper)}
                             onSlideChange={() => console.log('slide change')}
+                            loop={true}
+                            initialSlide={0}
+                            autoplay={{ delay: 2500, disableOnInteraction: false }}
+                            
                         >
+
                             
                             <SwiperSlide><View_cart /></SwiperSlide>
+                            
 
                         </Swiper>
 
