@@ -2,6 +2,14 @@ import React from 'react'
 import { FaRegHeart } from "react-icons/fa";
 import { IoEyeSharp } from "react-icons/io5";
 import { CiStar } from "react-icons/ci";
+
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+
 const View_cart = () => {
 
     const products = [
@@ -17,7 +25,7 @@ const View_cart = () => {
         },
         {
             id: 2,
-            discount_p: "40%",
+            discount_p: "60%",
             img: "/img/product/joystick.png",
             name: "HAVIT HV-G92 Gamepad",
             price: "$120",
@@ -27,7 +35,7 @@ const View_cart = () => {
         },
         {
             id: 3,
-            discount_p: "80%",
+            discount_p: "40%",
             img: "/img/product/joystick.png",
             name: "HAVIT HV-G92 Gamepad",
             price: "$120",
@@ -37,7 +45,7 @@ const View_cart = () => {
         },
         {
             id: 4,
-            discount_p: "70%",
+            discount_p: "50%",
             img: "/img/product/joystick.png",
             name: "HAVIT HV-G92 Gamepad",
             price: "$120",
@@ -45,6 +53,8 @@ const View_cart = () => {
             rating: "(90)"
 
         }
+   
+       
     ]
 
 
@@ -52,6 +62,8 @@ const View_cart = () => {
         <>
             {
                 products.map((product) => (
+
+                 
 
                     <div className="w-[25%]  md:w-[50%] sm:w-[100%] hover:scale-105">
 
@@ -93,8 +105,14 @@ const View_cart = () => {
                         </div>
                     </div>
 
+
+
+
+
                 ))
             }
+
+
 
 
 
