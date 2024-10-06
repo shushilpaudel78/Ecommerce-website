@@ -3,6 +3,8 @@ import { FaRegHeart } from "react-icons/fa";
 import { IoEyeSharp } from "react-icons/io5";
 import { CiStar } from "react-icons/ci";
 
+import React, { useState, useEffect } from 'react';
+
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -11,6 +13,27 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 const View_cart = () => {
+
+
+
+    const CartComponent = () => {
+        // State to hold the cart items
+        const [cartItems, setCartItems] = useState([]);
+      
+        // Load cart data from localStorage when the component mounts
+        useEffect(() => {
+          const storedCart = localStorage.getItem('cart');
+          if (storedCart) {
+            setCartItems(JSON.parse(storedCart)); // Parse the data if it exists
+          }
+        }, []);
+
+
+        const AddtoStorage = (item) => {
+            const updatedCart = [...cartItems, item]; // Add the new item to the cart
+            setCartItems(updatedCart); // Update the cart state
+            localStorage.setItem('cart', JSON.stringify(updatedCart)); // Save the updated cart to localStorage
+          };
 
  
 
@@ -87,7 +110,7 @@ const View_cart = () => {
 
                             <div className="w-[190px] h-[180px] ml-10 "><img src={product.img} alt="product photo" className='w-full h-full object-cover' /></div>
 
-                            <button onClick="AddtoStorage(1, 'shushil', 'paudel')" className='w-full py-[10px] text-white bg-black font-poppins text-[16px]'>Add to cart</button>
+                            <button onClick={ () => AddtoStorage({id:1, name:"shushil", address:"chitwan"})} className='w-full py-[10px] text-white bg-black font-poppins text-[16px]'>Add to cart</button>
 
 
                         </div>
