@@ -1,10 +1,15 @@
 import React from 'react'
-import Jocket_photo from '/img/product/jacket.png'
 import { FaRegHeart } from "react-icons/fa";
 import { IoEyeSharp } from "react-icons/io5";
 import { CiStar } from "react-icons/ci";
 
 const Selling_cart = () => {
+
+    const AddtoCart = (product) => {
+
+        localStorage.setItem('items',JSON.stringify(product));
+
+    }
 
     const products = [
         {
@@ -27,7 +32,6 @@ const Selling_cart = () => {
             privious_price: "$160",
             rating: "(88)"
 
-
         },
         {
             id: 3,
@@ -49,12 +53,10 @@ const Selling_cart = () => {
             privious_price: "$160",
             rating: "(88)"
 
-
         }
         
 
     ]
-
 
 
 
@@ -86,7 +88,7 @@ const Selling_cart = () => {
 
                             <div className="w-[190px] h-[180px] ml-10  sm:w-[250px] sm:h-[200px]"><img src={product.img} alt="product photo" className='w-full h-full object-cover' /></div>
 
-                            <button className='w-full py-[10px] text-white bg-black font-poppins text-[16px]'>Add to cart</button>
+                            <button onClick={() => AddtoCart(product)} className='w-full py-[10px] text-white bg-black font-poppins text-[16px]'>Add to cart</button>
 
 
                         </div>

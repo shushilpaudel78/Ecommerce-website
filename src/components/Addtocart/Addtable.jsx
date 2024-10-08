@@ -5,11 +5,12 @@ import Addtotal from './Addtotal'
 
 const Addtable = () => {
 
+
     const products = [
         {
             id: 1,
             image: "/img/Addtocart/Monitor-Cart-Small.png",
-            product_name: "LCD Monitor",
+            product_name: "Computer",
             product_price: "$345",
             total_price: "$456"
         },
