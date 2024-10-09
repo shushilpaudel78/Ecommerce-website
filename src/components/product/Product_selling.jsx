@@ -34,10 +34,10 @@ const Product_selling = () => {
 
 
 
-                    <div className="flex">
+                    {/* <div className="flex"> */}
                         <Selling_cart />
 
-                    </div>
+                    {/* </div> */}
 
 
 

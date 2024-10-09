@@ -70,11 +70,11 @@ const Selling_cart = () => {
         <>
 
 <Swiper
-      spaceBetween={10}
-      slidesPerView={1}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-      pagination={{ clickable: false }}
+      slidesPerView={2}
+      spaceBetween={5}
+    //   onSlideChange={() => console.log('slide change')}
+    //   onSwiper={(swiper) => console.log(swiper)}
+    //   pagination={{ clickable: false }}
       loop={true}
 
     >
