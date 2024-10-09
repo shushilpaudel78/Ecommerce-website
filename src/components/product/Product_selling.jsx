@@ -34,7 +34,7 @@ const Product_selling = () => {
 
 
 
-                    <div className="flex flex-wrap">
+                    <div className="flex">
                         <Selling_cart />
 
                     </div>

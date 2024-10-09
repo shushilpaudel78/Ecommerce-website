@@ -3,6 +3,12 @@ import { FaRegHeart } from "react-icons/fa";
 import { IoEyeSharp } from "react-icons/io5";
 import { CiStar } from "react-icons/ci";
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+
 const Selling_cart = () => {
 
     const AddtoCart = (product) => {
@@ -63,12 +69,25 @@ const Selling_cart = () => {
     return (
         <>
 
+<Swiper
+      spaceBetween={10}
+      slidesPerView={1}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+      pagination={{ clickable: false }}
+      loop={true}
+
+    >
+
+
+<SwiperSlide>
+
             {
                 products.map((product) => (
 
 
 
-                    <div className="w-[25%]  md:w-[50%] sm:w-[100%] hover:scale-105">
+                    <div className="w-[100%]  md:w-[50%] sm:w-[100%] hover:scale-105">
 
                         <div className="bg-[#F5F5F5] mx-3 my-3">
 
@@ -112,6 +131,10 @@ const Selling_cart = () => {
 
                 ))
             }
+
+</SwiperSlide>
+
+</Swiper>
 
 
 

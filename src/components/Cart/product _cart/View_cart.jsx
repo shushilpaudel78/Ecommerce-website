@@ -6,14 +6,12 @@ import { CiStar } from "react-icons/ci";
 
 // Import Swiper styles
 import 'swiper/css';
-
-
-
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
+
 
 
 const View_cart = () => {
@@ -130,28 +128,14 @@ const View_cart = () => {
         <>
 
             <Swiper
-                spaceBetween={5}
+                spaceBetween={3}
                 slidesPerView={4}
                 onSlideChange={() => console.log('slide change')}
+                pagination={{ clickable: false }}
                 onSwiper={(swiper) => console.log(swiper)}
+                loop={true}
 
-                breakpoints={{
-                    // when window width is >= 640px
-                    639: {
-                      slidesPerView: 1,
-                      spaceBetween: 20,
-                    },
-                    // when window width is >= 768px
-                    900: {
-                      slidesPerView: 3,
-                      spaceBetween: 30,
-                    },
-                    // when window width is >= 1024px
-                    1024: {
-                      slidesPerView: 4,
-                      spaceBetween: 40,
-                    },
-                  }}
+                
             >
 
                 {
@@ -166,7 +150,7 @@ const View_cart = () => {
 
 
 
-                            <div className="w-[100%]  md:w-[100%] sm:w-[100%] hover:scale-105">
+                            <div className="w-[100%]  md:w-[50%] sm:w-[100%] hover:scale-105">
 
                                 <div className="bg-[#F5F5F5] mx-3 my-3">
 

@@ -8,6 +8,8 @@ const Wishlist_cart = () => {
     return (
         <>
 
+        
+
             <div className="w-[25%]  md:w-[50%] sm:w-full hover:scale-105">
 
                 <div className="bg-[#F5F5F5] mx-3 my-3">
