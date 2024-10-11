@@ -150,7 +150,7 @@ const View_cart = () => {
 
 
 
-                            <div className="w-[100%]  md:w-[50%] sm:w-[100%] hover:scale-105">
+                            <div className="w-[100%]  md:w-[100%] sm:w-[100%] hover:scale-105">
 
                                 <div className="bg-[#F5F5F5] mx-3 my-3">
 
@@ -168,7 +168,7 @@ const View_cart = () => {
                                     </div>
 
 
-                                    <div className="w-[190px] h-[180px] ml-10 "><img src={product.img} alt="product photo" className='w-full h-full object-cover' /></div>
+                                    <div className="w-[80%] h-[180px] ml-10 "><img src={product.img} alt="product photo" className='w-full h-full object-contain' /></div>
 
                                     <button onClick={() => addToCart(product)} className='w-full py-[10px] text-white bg-black font-poppins text-[16px]'>Add to cart</button>
 

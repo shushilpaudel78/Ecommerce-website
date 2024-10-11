@@ -5,27 +5,6 @@
 
 
 
-@media(max-width: 900px) {
-    body {
-      /* background-color: red; */
-    }
-    .swiper-slide{
-        width: 254px !important;
-
-    }
-
-  }
-
-
-@media(max-width: 639px) {
-    body {
-      background-color: lightblue;
-    }
-    .swiper-slide{
-        width: 254px !important;
-    }
-
-  }
 
 
  

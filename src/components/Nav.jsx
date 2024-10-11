@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { IoSearchOutline } from "react-icons/io5";
 import { IoCartOutline } from "react-icons/io5";
@@ -9,17 +9,30 @@ import { IoReorderThreeOutline } from "react-icons/io5";
 const Nav = () => {
 
 
-    const [status, setStatus] = React.useState(true);
+    const [btnstyle, setBstyle] = useState('hidden');
+
+    const toggleBtn = () => {
+
+        if (btnstyle === 'hidden'){
+        setBstyle('block');
+        }else{
+        setBstyle('hidden');
+
+        }
+
+    }
 
 
+   
 
+      
 
-
+    
 
     return (
         <>
 
-            <div className="w-full h-full py-[20px] px-[10px] sm:py- ">
+            <div className="w-full h-full py-[20px] px-[10px] sm:py-5  sticky">
                 <div className=" max-w-[1200px] m-auto">
 
                     <div className="w-full h-auto flex justify-between items-center ">
@@ -28,21 +41,23 @@ const Nav = () => {
                             <h1 className='font-poppins uppercase font-bold text-[23px]'>Swattai</h1>
                         </div>
 
-                        {status? 
+                        
 
-                            <ul className=" md:items-center md:space-x-4 flex gap-[20px] font-poppins md:flex-col md:absolute md:left-[10px] md:top-[100px] md:bg-white md:hidden">
+                            <ul className= {` flex gap-[30px] font-poppins 
+                              md:items-centermd:flex-col md:bg-black md:w-full md:right-0 md:absolute md:top-20 md:px-5 md:py-8 md:text-white
+                                  md:${btnstyle}`}>
 
 
 
 
-                                <li><Link to='/' className='active:text-red-400'>Home</Link></li>
+                                <li><Link to='/' className='active:text-red-400 md:py-10'>Home</Link></li>
                                 <li><Link to='/contact'className='active:text-red-400'>Contact</Link></li>
                                 <li><Link to='/about' className='active:text-red-400'>About</Link></li>
                                 <li><Link to='/signup' className='active:text-red-400'>Sign Up</Link></li>
 
 
-                            </ul>:null
-                        }
+                            </ul>
+                        
 
 
                         <div className="flex md:justify-end">
@@ -58,7 +73,7 @@ const Nav = () => {
                                 <li ><Link to='/favorite' className='active:text-red-400'>  <CiHeart /></Link></li>
 
                                 <li   className='relative'>
-                                    <p id='cartCount' className='bg-red-600 rounded-[100px] text-[10px] text-white  text-center p-[4px] absolute top-[-12px] right-[-12px]'>1</p>
+                                    <p id='cartCount' className='bg-red-600 rounded-[100px] text-[10px] text-white  text-center p-[4px] absolute top-[-12px] right-[-12px]'></p>
                                      <Link to='/addcart' className='active:text-red-400'>
                                       <IoCartOutline /></Link></li>
                               
@@ -68,7 +83,7 @@ const Nav = () => {
 
 
 
-                            <button onClick={() => setStatus(!status)} > <IoReorderThreeOutline className='text-[30px] m-[7px] hidden md:block' /> </button>
+                            <button onClick={toggleBtn} > <IoReorderThreeOutline className='text-[30px] m-[7px] hidden md:block' /> </button>
 
 
 
