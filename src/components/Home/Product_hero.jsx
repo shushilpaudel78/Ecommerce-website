@@ -1,7 +1,5 @@
 import React from 'react'
 import Product_sidebar from './Product_sidebar'
-import applogo from '/img/product/applelogo.png'
-import applephoto from '/img/product/applephoto.png'
 import { FaArrowRight } from "react-icons/fa";
 
 const Product_hero = () => {
@@ -25,7 +23,7 @@ const Product_hero = () => {
 
                                     <div className="flex flex-col pt-[40px] pl-[80px] sm:pl-[10px] sm:items-center ">
                                         <div className="flex items-center gap-8 sm:gap-2">
-                                            <div className="w-[40px] h-[49px]"><img src={applogo} alt="logo" /></div>
+                                            <div className="w-[40px] h-[49px]"><img src='/img/product/applelogo.png' alt="logo" /></div>
                                             <p className=' font-poppins text-[16px] font-medium '>Iphone 14 users</p>
                                         </div>
 
@@ -41,7 +39,7 @@ const Product_hero = () => {
                                 <div className="w-[50%] md:hidden">
 
 
-                                    <div className="w-[100%] h-[352]"><img src={applephoto} alt="iphone  photo"  className='w-full h-full object-cover'/></div>
+                                    <div className="w-[100%] h-[352]"><img src='/img/product/applephoto.png' alt="iphone  photo"  className='w-full h-full object-cover'/></div>
 
                                 </div>
 

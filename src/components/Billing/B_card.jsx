@@ -1,7 +1,7 @@
 import React from 'react'
 import computer from '/img/product/joystick.png'
 import visacard from '/img/billing/Mastercard.png'
-import Red_button from '../Button/Red_button'
+import Red_button from '../common/Red_button'
 
 const B_card = () => {
     return (

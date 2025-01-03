@@ -21,7 +21,6 @@ const Nav = () => {
 
     }
 
-
         const [cartItems, setCartItems] = useState([]);
       
         useEffect(() => {
@@ -31,9 +30,6 @@ const Nav = () => {
             setCartItems(JSON.parse(storedCart));
           }
         }, []);
-
-
-
 
     return (
         <>
@@ -56,7 +52,6 @@ const Nav = () => {
                             <li><Link to='/signup' className='active:text-red-400'>Sign Up</Link></li>
 
                         </ul>
-
 
 
                         <div className="flex md:justify-end">

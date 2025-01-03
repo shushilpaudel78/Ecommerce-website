@@ -1,5 +1,4 @@
 import React from 'react'
-import Speaker from '/img/product/speaker.png'
 
 const Product_speaker = () => {
     return (
@@ -39,7 +38,7 @@ const Product_speaker = () => {
 
                             <div className="w-full h-auto mt-[80px] sm:mt-5">
 
-                                <div className="w-[90%] h-[320px]"><img className="w-full h-full object-cover sm:object-contain" src={Speaker} alt="Speaker" /></div>
+                                <div className="w-[90%] h-[320px]"><img className="w-full h-full object-cover sm:object-contain" src='/img/product/speaker.png' alt="Speaker" /></div>
 
                             </div>
 

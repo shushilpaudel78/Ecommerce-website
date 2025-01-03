@@ -1,6 +1,6 @@
 import React from 'react'
-import Ru_button from '../Button/Ru_button'
-import Red_button from '../Button/Red_button'
+import Ru_button from '../common/Ru_button'
+import Red_button from '../common/Red_button'
 import Addtotal from './Addtotal'
 import { useState, useEffect } from 'react'
 

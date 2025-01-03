@@ -1,6 +1,6 @@
 import React from 'react'
 import Selling_cart from '../Cart/product _cart/Selling_cart'
-import Red_button from '../Button/Red_button'
+import Red_button from '../common/Red_button'
 
 
 const Product_selling = () => {

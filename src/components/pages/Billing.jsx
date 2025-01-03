@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from '../Nav'
+import Nav from '../common/Nav'
 import Billing_form from '../Billing/Billing_form'
 import Footer from '../common/Footer'
 

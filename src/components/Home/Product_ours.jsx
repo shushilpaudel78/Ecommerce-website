@@ -3,7 +3,7 @@ import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
 import Our_cart from '../Cart/product _cart/Our_cart';
 import Ourn_cart from '../Cart/product _cart/Ourn_cart';
-import Red_button from '../Button/Red_button';
+import Red_button from '../common/Red_button';
 
 const Product_ours = () => {
     return (

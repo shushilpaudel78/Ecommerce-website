@@ -1,5 +1,4 @@
 import React from 'react'
-import mbimg from '/img/about/mobile.png'
 import { Link } from 'react-router-dom'
 
 const LoginForm = () => {
@@ -7,16 +6,12 @@ const LoginForm = () => {
         <>
 
             <div className="w-full h-auto mb-24">
-
                 <div className="max-[1200px] m-auto">
 
                     <div className="flex flex-wrap w-full h-auto">
-
                         <div className="w-[60%] lg:hidden">
-
                             <div className="w-full h-full truncate">
-                                <img src={mbimg} alt="mobile image " className='w-full h-full object-cover ' />
-
+                                <img src='/img/about/mobile.png' alt="mobile image " className='w-full h-full object-cover ' />
                             </div>
 
                         </div>

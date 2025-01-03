@@ -31,7 +31,6 @@ const Createid = () => {
                                         <p className='text-[16px]'> Sign up with Google</p>
                                         </button>
 
-
                                     <div className="flex">
                                     <p> Already have Account ? </p>
                                     <Link className='mx-[5px]' to='/login'>Log In</Link>

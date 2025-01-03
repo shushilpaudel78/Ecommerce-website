@@ -1,9 +1,4 @@
 import React from 'react'
-import blackjoystick from '/img/product/joystickblack.png'
-import girlsblack from '/img/product/girlwithblackhat.png'
-import speaker from '/img/product/battery.png'
-import perfume from '/img/product/perfume.png'
-
 
 const Product_features = () => {
     return (
@@ -38,7 +33,7 @@ const Product_features = () => {
                             <div className="bg-black mr-8 relative md:mr-0">
 
 
-                                <div className="w-full h-[600px] sm:h-[400px]">  <img src={blackjoystick} alt="img" className='w-full h-full object-cover' /></div>
+                                <div className="w-full h-[600px] sm:h-[400px]">  <img src='/img/product/joystickblack.png' alt="img" className='w-full h-full object-cover' /></div>
 
 
                                 <div className='absolute flex bottom-[30px] left-5 text-white flex-col'>
@@ -62,7 +57,7 @@ const Product_features = () => {
                             <div className="w-full relative bg-black">
 
                                 <div className="img  w-[80%] h-[286px] md:w-full">
-                                    <img src={girlsblack} alt="Girl img" className='w-full h-full object-cover' />
+                                    <img src='/img/product/girlwithblackhat.png' alt="Girl img" className='w-full h-full object-cover' />
                                 </div>
 
                                 <div className='absolute flex bottom-[34px] left-5 text-white flex-col'>
@@ -83,7 +78,7 @@ const Product_features = () => {
                                     <div className='w-full h-auto bg-black'>
 
                                         <div className="img w-[100%] h-[284px]">
-                                            <img src={speaker} alt="speakers" className='w-full  h-full object-cover' />
+                                            <img src='/img/product/battery.png' alt="speakers" className='w-full  h-full object-cover' />
 
                                         </div>
 
@@ -104,7 +99,7 @@ const Product_features = () => {
 
 
                                         <div className="img  w-[100%] h-[284px]" >
-                                            <img src={perfume} alt="perfume" className='w-full  h-full object-cover' />
+                                            <img src='/img/product/perfume.png' alt="perfume" className='w-full  h-full object-cover' />
 
                                         </div>
 

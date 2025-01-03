@@ -1,6 +1,6 @@
 import React from 'react'
 import Createid from '../Createid'
-import Nav from '../Nav'
+import Nav from '../common/Nav'
 import Footer from '../common/Footer'
 
 const Signup = () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from '../Nav'
+import Nav from '../common/Nav'
 import Contact_index from '../contact/contact_index'
 import Footer from '../common/Footer'
 
