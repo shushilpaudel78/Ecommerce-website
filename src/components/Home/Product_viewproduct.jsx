@@ -1,5 +1,5 @@
 import React from 'react'
-import View_cart from '../Cart/product _cart/View_cart';
+import View_cart from '../common/View_cart';
 import Red_button from '../common/Red_button';
 
 const Product_viewproduct = () => {

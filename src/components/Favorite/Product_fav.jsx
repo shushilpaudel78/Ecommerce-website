@@ -1,6 +1,6 @@
 import React from 'react'
 import Ru_button from '../common/Ru_button'
-import Wishlist_cart from '../Cart/product _cart/Wishlist_cart'
+import Wishlist_cart from '../common/Wishlist_cart'
 
 
 const Product_fav = () => {

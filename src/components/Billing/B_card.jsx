@@ -106,17 +106,13 @@ const B_card = () => {
                 </div>
 
 
-
                 <div className="pl-20 md:pl-0">
-
                     <div className="flex justify-between flex-wrap md:flex-col md:gap-5 sm:px-[10px]">
                         <input type="text" className='border-[2px] md:h-[50px] px-5 border-black rounded-sm' placeholder='Coupan code' />
 
                         <div className="div">
                             <Red_button name="Apply Coupan" />
                         </div>
-
-
                     </div>
 
                     <div className="my-[20px] sm:px-[10px]">

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { FaRegHeart } from "react-icons/fa";
 import { IoEyeSharp } from "react-icons/io5";
 import { CiStar } from "react-icons/ci";
-import { products } from './DataApi';
+import { products } from '../constants/DataApi';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';

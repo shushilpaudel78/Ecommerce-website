@@ -1,5 +1,5 @@
 import React from 'react'
-import Chairmen_cart from '../Cart/About_cart/Chairmen_cart'
+import Chairmen_cart from '../common/Chairmen_cart'
 
 
 const About_chairmen = () => {
@@ -10,13 +10,9 @@ const About_chairmen = () => {
                 <div className="max-w-[1200px] m-auto">
 
                     <div className="flex flex-wrap justify-start">
-
                         <Chairmen_cart />
-                    
-
+                
                     </div>
-
-
                 </div>
 
             </div>

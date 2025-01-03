@@ -1,5 +1,5 @@
 import React from 'react'
-import Selling_cart from '../Cart/product _cart/Selling_cart'
+import Selling_cart from '../common/Selling_cart'
 import Red_button from '../common/Red_button'
 
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import Last_cart from '../Cart/About_cart/Last_cart'
+import Last_cart from './Last_cart'
 
 const About_last_cart = () => {
     return (

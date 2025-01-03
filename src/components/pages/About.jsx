@@ -4,7 +4,7 @@ import Footer from '../common/Footer'
 import About_chairmen from '../About/About_chairmen'
 import About_hero from  '../About/About_hero'
 import About_product from '../About/About_product'
-import About_last_cart from '../About/About_last_cart'
+import About_last_cart from '../common/About_last_cart'
 
 
 const About = () => {

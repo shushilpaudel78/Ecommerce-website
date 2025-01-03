@@ -1,5 +1,5 @@
 import React from 'react'
-import Createid from '../Createid'
+import Createid from '../Login/Createid'
 import Nav from '../common/Nav'
 import Footer from '../common/Footer'
 
