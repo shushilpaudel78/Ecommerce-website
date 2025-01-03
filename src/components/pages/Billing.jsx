@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from '../Nav'
-import Footer from '../Footer'
 import Billing_form from '../Billing/Billing_form'
+import Footer from '../common/Footer'
 
 const Billing = () => {
   return (

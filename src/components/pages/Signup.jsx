@@ -1,24 +1,14 @@
 import React from 'react'
 import Createid from '../Createid'
 import Nav from '../Nav'
-import Footer from '../Footer'
-
+import Footer from '../common/Footer'
 
 const Signup = () => {
   return (
     <div>
-
-
-        
-    <Nav />
-
-    
-
-    <Createid />
-
-
-    <Footer />
-      
+      <Nav />
+      <Createid />
+      <Footer />
     </div>
   )
 }

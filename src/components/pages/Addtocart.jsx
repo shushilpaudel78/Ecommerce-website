@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from '../Nav'
-import Footer from '../Footer'
 import Addtable from '../Addtocart/Addtable'
+import Footer from '../common/Footer'
 
 const Addtocart = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from '../Nav'
-import Footer from '../Footer'
 import LoginForm from '../LoginForm'
+import Footer from '../common/Footer'
 
 const Login = () => {
   return (

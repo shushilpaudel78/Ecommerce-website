@@ -10,7 +10,6 @@ const Nav = () => {
 
 
     const [btnstyle, setBstyle] = useState('hidden');
-
     const toggleBtn = () => {
 
         if (btnstyle === 'hidden') {
@@ -36,40 +35,25 @@ const Nav = () => {
 
 
 
-
-
-
-
-
-
-
-
     return (
         <>
 
             <div className="w-full h-full py-[20px] px-[10px] sm:py-5  sticky top-0">
                 <div className=" max-w-[1200px] m-auto">
-
                     <div className="w-full h-auto flex justify-between items-center ">
+                        <div className="w-[80px] h-[80px]" style={{
+                            clipPath:'circle(50% at 50% 50%)'
 
-                        <div className="logo">
-                            <h1 className='font-poppins uppercase font-bold text-[23px]'>Swattai</h1>
+                        }}>
+                            <img src="img/logo.png" alt="logo" className='w-full  h-full object-contain' />
                         </div>
-
-
-
                         <ul className={` flex gap-[30px] font-poppins 
                               md:items-centermd:flex-col md:bg-black md:w-full md:right-0 md:absolute md:top-20 md:px-5 md:py-8 md:text-white
                                   md:${btnstyle}`}>
-
-
-
-
                             <li><Link to='/' className='active:text-red-400 md:py-10'>Home</Link></li>
                             <li><Link to='/contact' className='active:text-red-400'>Contact</Link></li>
                             <li><Link to='/about' className='active:text-red-400'>About</Link></li>
                             <li><Link to='/signup' className='active:text-red-400'>Sign Up</Link></li>
-
 
                         </ul>
 

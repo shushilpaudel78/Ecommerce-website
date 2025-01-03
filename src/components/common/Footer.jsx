@@ -1,9 +1,6 @@
 import React from 'react'
 import { BsSendArrowDown } from "react-icons/bs";
 import { Link } from 'react-router-dom';
-import appimg from '/img/footer/AppStore.png'
-import gogimg from '/img/footer/GooglePlay.png'
-import qimg from '/img/footer/qrcode.png'
 
 
 const Footer = () => {
@@ -41,11 +38,11 @@ const Footer = () => {
                     <h1 className='font-poopins text-[24px] leading-[60px]' >Account</h1>
 
                     <ul className='flex  flex-col gap-[2px]'>
-                        <li><Link element ='' path=''>My Account</Link></li>
-                        <li><Link element ='' path=''>Login / Register</Link></li>
-                        <li><Link element ='' path=''>Cart</Link></li>
-                        <li><Link element ='' path=''>Wishlist</Link></li>
-                        <li><Link element ='' path=''>Shop</Link></li>
+                        <li><Link to='/myaccount'>My Account</Link></li>
+                        <li><Link to='/login'>Login / Register</Link></li>
+                        <li><Link to='/cart'>Cart</Link></li>
+                        <li><Link to='/wishlist'>Wishlist</Link></li>
+                        <li><Link to='/shop'>Shop</Link></li>
                         
 
                     </ul>
@@ -74,13 +71,13 @@ const Footer = () => {
 
                     <div className="flex gap-[10px]">
 
-                        <div className="w-[80px] h-[80px] "><img src={qimg} alt=""  className='w-full h-full object-contain'/></div>
+                        <div className="w-[80px] h-[80px] "><img src='/img/footer/qrcode.png' alt=""  className='w-full h-full object-contain'/></div>
 
 
                         <div className="flex flex-col gap-[5px]">
 
-                            <div className="w-[104px] h-[38px]"><img src={appimg} alt="abc" className='w-full h-full object-contain' /></div>
-                            <div className="w-[104px] h-[38px]"><img src={gogimg} alt="bcd" className='w-full h-full object-contain' /></div>
+                            <div className="w-[104px] h-[38px]"><img src='/img/footer/AppStore.png' alt="abc" className='w-full h-full object-contain' /></div>
+                            <div className="w-[104px] h-[38px]"><img src='/img/footer/GooglePlay.png' alt="bcd" className='w-full h-full object-contain' /></div>
 
 
                         </div>
