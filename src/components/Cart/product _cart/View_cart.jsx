@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaRegHeart } from "react-icons/fa";
 import { IoEyeSharp } from "react-icons/io5";
 import { CiStar } from "react-icons/ci";
@@ -17,12 +17,6 @@ import 'swiper/css';
 const View_cart = () => {
 
 
-    const addToCart = (product) => {
-        localStorage.setItem('items', JSON.stringify(product));
-
-
-
-    }
 
 
 

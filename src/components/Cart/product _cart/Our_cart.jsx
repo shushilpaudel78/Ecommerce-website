@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaRegHeart } from "react-icons/fa";
 import { IoEyeSharp } from "react-icons/io5";
 import { CiStar } from "react-icons/ci";
@@ -47,6 +47,17 @@ const Our_cart = () => {
     ]
 
 
+    const [sdata, setSdata] = useState([]);
+
+
+    const addtocart = (product) => {
+
+        // const gData = [...sdata, product];
+        // setSdata(gData);
+        // localStorage.setItem('DataGroup', JSON.stringify(gData));
+    }
+
+
 
 
 
@@ -83,7 +94,7 @@ const Our_cart = () => {
 
                                 <div className="w-[190px] h-[180px] ml-10 "><img src={product.img} alt="product photo" className='w-full h-full object-cover' /></div>
 
-                                <button className='w-full py-[10px] text-white bg-black font-poppins text-[16px]'>Add to cart</button>
+                                <button className='w-full py-[10px] text-white bg-black font-poppins text-[16px]' onClick={addtocart(product)}>Add to cart</button>
 
 
                             </div>

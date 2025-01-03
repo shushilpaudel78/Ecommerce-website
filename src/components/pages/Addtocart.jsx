@@ -6,14 +6,9 @@ import Addtable from '../Addtocart/Addtable'
 const Addtocart = () => {
   return (
     <>
-
     <Nav />
-
     <Addtable />
-
     <Footer />
-
-
       
     </>
   )

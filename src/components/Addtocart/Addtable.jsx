@@ -2,26 +2,51 @@ import React from 'react'
 import Ru_button from '../Button/Ru_button'
 import Red_button from '../Button/Red_button'
 import Addtotal from './Addtotal'
+import { useState, useEffect } from 'react'
 
 const Addtable = () => {
 
+    const [cartItems, setCartItems] = useState([]);
 
-    const products = [
-        {
-            id: 1,
-            image: "/img/Addtocart/Monitor-Cart-Small.png",
-            product_name: "Computer",
-            product_price: "$345",
-            total_price: "$456"
-        },
-        {
-            id: 2,
-            image: "/img/product/keyboard.png",
-            product_name: "Giant Keyboard",
-            product_price: "$345",
-            total_price: "$456"
-        }
-    ]
+    useEffect(() => {
+      // Get the cart data from localStorage
+      const storedCart = localStorage.getItem('cartData');
+      
+      // If there is data, parse it and set it in the state
+      if (storedCart) {
+        setCartItems(JSON.parse(storedCart));
+      }
+    }, [])
+
+    const  [fvalue, setfvalue] = useState('')
+
+    const invalue = (event) => {
+        setfvalue(event.target.value);
+
+    }
+
+
+      
+   
+
+
+
+    // const products = [
+    //     {
+    //         id: 1,
+    //         image: "/img/Addtocart/Monitor-Cart-Small.png",
+    //         product_name:"Giant Keyboard",
+    //         product_price: "$345",
+    //         total_price: "$456"
+    //     },
+    //     {
+    //         id: 2,
+    //         image: "/img/product/keyboard.png",
+    //         product_name: "Giant Keyboard",
+    //         product_price: "$345",
+    //         total_price: "$456"
+    //     }
+    // ]
 
     return (
 
@@ -42,22 +67,21 @@ const Addtable = () => {
                             <th className='py-[20px] text-right px-[20px]'>Subtotal</th>
                         </tr>
 
-                        {products.map((product) => (
-
+                        {cartItems.map((product) => (
 
 
                             <tr className='font-poppins text-[16px] font-normal shadow-sm text-left'>
                                 <td className='py-[20px] px-[20px]'>
                                     <div className="flex items-center flex-wrap gap-2">
-                                        <div className="w-[54px] h-[54px]"><img src={product.image} alt="" className='w-full h-full object-contain' /></div>
-                                        <p>{product.product_name}</p>
+                                        <div className="w-[54px] h-[54px]"><img src={product.img} alt="" className='w-full h-full object-contain' /></div>
+                                        <p>{product.name}</p>e
 
                                     </div>
                                 </td>
-                                <td className='py-[20px]'>{product.product_price}</td>
+                                <td className='py-[20px]'>{product.price}</td>
 
-                                <td className='py-[20px]'><input type="text" placeholder='01' className=' text-center px-[10px] border-[3px] w-16 h-10 text-[16px] font-poppins' /></td>
-                                <td className='py-[20px] text-right px-[20px]'>{product.total_price}</td>
+                                <td className='py-[20px]'><input type="text" onChange={invalue} value={fvalue} placeholder='01' className=' text-center px-[10px] border-[3px] w-16 h-10 text-[16px] font-poppins' /></td>
+                                <td className='py-[20px] text-right px-[20px]'>{product.price*fvalue}</td>
 
                             </tr>
 

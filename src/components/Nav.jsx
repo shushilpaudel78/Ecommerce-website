@@ -13,26 +13,41 @@ const Nav = () => {
 
     const toggleBtn = () => {
 
-        if (btnstyle === 'hidden'){
-        setBstyle('block');
-        }else{
-        setBstyle('hidden');
+        if (btnstyle === 'hidden') {
+            setBstyle('block');
+        } else {
+            setBstyle('hidden');
 
         }
 
     }
 
 
-   
-
+        const [cartItems, setCartItems] = useState([]);
       
+        useEffect(() => {
+          // Retrieve cart data from localStorage
+          const storedCart = localStorage.getItem('cartData');
+          if (storedCart) {
+            setCartItems(JSON.parse(storedCart));
+          }
+        }, []);
 
-    
+
+
+
+
+
+
+
+
+
+
 
     return (
         <>
 
-            <div className="w-full h-full py-[20px] px-[10px] sm:py-5  sticky">
+            <div className="w-full h-full py-[20px] px-[10px] sm:py-5  sticky top-0">
                 <div className=" max-w-[1200px] m-auto">
 
                     <div className="w-full h-auto flex justify-between items-center ">
@@ -41,23 +56,23 @@ const Nav = () => {
                             <h1 className='font-poppins uppercase font-bold text-[23px]'>Swattai</h1>
                         </div>
 
-                        
 
-                            <ul className= {` flex gap-[30px] font-poppins 
+
+                        <ul className={` flex gap-[30px] font-poppins 
                               md:items-centermd:flex-col md:bg-black md:w-full md:right-0 md:absolute md:top-20 md:px-5 md:py-8 md:text-white
                                   md:${btnstyle}`}>
 
 
 
 
-                                <li><Link to='/' className='active:text-red-400 md:py-10'>Home</Link></li>
-                                <li><Link to='/contact'className='active:text-red-400'>Contact</Link></li>
-                                <li><Link to='/about' className='active:text-red-400'>About</Link></li>
-                                <li><Link to='/signup' className='active:text-red-400'>Sign Up</Link></li>
+                            <li><Link to='/' className='active:text-red-400 md:py-10'>Home</Link></li>
+                            <li><Link to='/contact' className='active:text-red-400'>Contact</Link></li>
+                            <li><Link to='/about' className='active:text-red-400'>About</Link></li>
+                            <li><Link to='/signup' className='active:text-red-400'>Sign Up</Link></li>
 
 
-                            </ul>
-                        
+                        </ul>
+
 
 
                         <div className="flex md:justify-end">
@@ -72,11 +87,11 @@ const Nav = () => {
                             <ul className='flex text-[25px] gap-4 mx-4 py-3 px-2' id='myNav'>
                                 <li ><Link to='/favorite' className='active:text-red-400'>  <CiHeart /></Link></li>
 
-                                <li   className='relative'>
-                                    <p id='cartCount' className='bg-red-600 rounded-[100px] text-[10px] text-white  text-center p-[4px] absolute top-[-12px] right-[-12px]'></p>
-                                     <Link to='/addcart' className='active:text-red-400'>
-                                      <IoCartOutline /></Link></li>
-                              
+                                <li className='relative'>
+                                    <p id='cartCount' className='bg-red-600 rounded-[100px] text-[10px] text-white  text-center p-[4px] absolute top-[-12px] right-[-12px]'>{cartItems.length}</p>
+                                    <Link to='/addcart' className='active:text-red-400'>
+                                        <IoCartOutline /></Link></li>
+
                                 <li ><Link to='/profile' className='active:text-red-400'><FaRegUser className='text-[20px]' /></Link></li>
                             </ul>
 
