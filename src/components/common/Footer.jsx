@@ -7,17 +7,17 @@ const Footer = () => {
   return (
     <>
 
-        <div className="w-full h-full py-[40px] bg-black  text-[#FAFAFA] p-[5px] lg:px-[20px]">
+        <div className="w-full h-full py-[40px] bg-primaryBlue  text-secondaryWhite p-[5px] lg:px-[20px]">
         <div className="max-w-[1200px] m-auto">
 
-            <div className="flex w-full h-auto justify-start flex-wrap  text-[#FAFAFA] leading-[40px] py-[10px]">
+            <div className="flex w-full h-auto justify-start flex-wrap  text-secondaryWhite leading-[40px] py-[10px]">
 
                 <div className="w-[20%] leading-[40px] lg:w-[30%] md:w-[50%] ">
                     <h1 className='font-poopins text-[24px] leading-[60px]'>Exclusive</h1>
                     <h3 className='text-[16px]'>Subscribe</h3>
                     <p className='text-[16px]'>Get 10% off your first order</p>
                     <div className="relative w-[180px] h-[40px] my-5">
-                        <input type="text" className='w-full h-full text-[#FAFAFA] pl-[10px] pr-[40px]  rounded-[10px] bg-black border-[2px]' />
+                        <input type="text" className='w-full h-full text-secondaryWhite pl-[10px] pr-[40px]  rounded-[10px] bg-primaryBlue/40 border-[2px]' />
                         <BsSendArrowDown className='absolute  text-red top-[11px] right-[17px] text-[20px]' />
 
                     </div>
@@ -66,8 +66,8 @@ const Footer = () => {
 
 
                 <div className="w-[20%] leading-[40px] lg:w-[30%] md:w-[50%] sm:w-[100%]">
-                    <h1 className='font-poopins text-[24px] leading-[60px]' >Download App</h1>
-                    <p>Save $3 with App New User Only</p>
+                    <h1 className='font-poopins text-[24px] leading-[60px] text-secondaryWhite' >Download App</h1>
+                    <p className='text-secondaryWhite '>Save $3 with App New User Only</p>
 
                     <div className="flex gap-[10px]">
 
@@ -106,7 +106,7 @@ const Footer = () => {
     </div>
 
 
-    <p className="text-center text-[#ffff] font-poppins w-full [20px] pt-[40px] pb-[30px] text-[16px] bg-black"> © Copyright Rimel 2022. All right reserved</p>
+    <p className="text-center text-secondaryWhite font-poppins w-full [20px] pt-[40px] pb-[30px] text-[16px] bg-primaryBlue"> © Copyright Rimel 2022. All right reserved</p>
 
 
 

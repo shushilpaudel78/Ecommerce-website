@@ -1,52 +1,66 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
 
 const Product_time = () => {
-    return (
-        <>
-            <div className="w-full h-full my-[40px] py-[20px] sm:my-[0px]">
+        const [time, setTime] = useState({
+            hours: new Date().getHours(),
+            minutes: new Date().getMinutes(),
+            seconds: new Date().getSeconds(),
+        });
 
-                <div className="max-w-[1200px] m-auto">
-                    <div className="flex items-center gap-3 px-[10px]">
-                        <div className="w-[30px] h-[40px] bg-red-500" ></div>
-                        <p className='font-poppins  text-[16px] font-semibold'>Today's</p>
-                    </div>
+        useEffect(() => {
+            const interval = setInterval(() => {
+                const now = new Date();
+                setTime({
+                    hours: now.getHours(),
+                    minutes: now.getMinutes(),
+                    seconds: now.getSeconds(),
+                });
+            }, 1000);
 
-                    <div className="flex justify-between items-center my-[20px] px-[10px] sm:flex-col sm:gap-3 sm:my-0">
+            return () => clearInterval(interval); // Clean up the interval on component unmount
+        }, []);
+        return (
+            <>
+                <div className="w-full h-full my-[40px] py-[20px] sm:my-[0px] px-[10px]">
+                    <div className="max-w-[1200px] m-auto">
 
-                        <h1 className='text-[30px] font-poppins font-semibold'>Flash  Sales</h1>
 
-                        <table className='w-[250px] h-auto text-center font-poppins font-normal bg-[#F5F5F5] text-[14px] py-[20px] first-letter:uppercase' >
-                            <tr>
-                                <td>Days</td>
-                                <td>Hours</td>
-                                <td>Minutes</td>
-                                <td>Secounds</td>
+                        <div className="flex justify-between items-center  sm:flex-col sm:gap-3 sm:my-0">
+                            <div className="flex flex-col">
+                                <p className='font-poppins text-[16px] font-semibold text-black/80'>Today's</p>
+                                <h1 className='text-[30px] text-textBlue font-poppins font-semibold leading-[40px]'>Flash  Sales</h1>
+                            </div>
 
-                            </tr>
-                            <tr className='text-[20px] font-semibold'>
-                                <td>03</td>
-                                <td>23</td>
-                                <td>19</td>
-                                <td>56</td>
+                            <table className='w-[250px] h-auto  text-textBlue text-center font-poppins font-normal bg-lightBlue text-[14px] py-4 px-2 first-letter:uppercase' >
+                                <tr>
+                                    <td>Hours</td>
+                                    <td>Minutes</td>
+                                    <td>Secounds</td>
 
-                            </tr>
-                        </table>
-                        <div className="flex gap-[10px]">
-                            <button className='bg-[#F5F5F5] text-[20px] rounded-full p-[10px]'> <FaArrowLeft /></button>
-                            <button className='bg-[#F5F5F5] text-[20px]  rounded-full p-[10px]'> <FaArrowRight /></button>
+                                </tr>
+                                <tr className='text-[20px] font-semibold'>
+                                    <td>{String(time.hours).padStart(2, '0')}</td>
+                                    <td>{String(time.minutes).padStart(2, '0')}</td>
+                                    <td>{String(time.seconds).padStart(2, '0')}</td>
+
+                                </tr>
+                            </table>
+                            <div className="flex gap-[10px]">
+                                <button className='bg-primaryBlue text-[20px] text-secondaryWhite rounded-full p-[10px]'> <FaArrowLeft /></button>
+                                <button className='bg-primaryBlue text-[20px] text-secondaryWhite  rounded-full p-[10px]'> <FaArrowRight /></button>
+                            </div>
+
                         </div>
 
                     </div>
 
                 </div>
 
-            </div>
 
+            </>
+        )
+    }
 
-        </>
-    )
-}
-
-export default Product_time
+    export default Product_time

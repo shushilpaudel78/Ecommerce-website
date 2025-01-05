@@ -5,7 +5,6 @@ import Chairmen_cart from '../common/Chairmen_cart'
 const About_chairmen = () => {
     return (
         <>
-
             <div className="w-full h-auto my-[60px] px-10 sm:my-0">
                 <div className="max-w-[1200px] m-auto">
 
@@ -16,9 +15,6 @@ const About_chairmen = () => {
                 </div>
 
             </div>
-
-
-
 
 
         </>

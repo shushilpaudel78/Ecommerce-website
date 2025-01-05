@@ -10,6 +10,7 @@ import Product_speaker from '../Home/Product_speaker'
 import Product_ours from '../Home/Product_ours'
 import Product_features from '../Home/Product_features'
 import Footer from '../common/Footer'
+import Counter from '../Home/Counter'
 
 const Home = () => {
     return (
@@ -21,6 +22,7 @@ const Home = () => {
             <Product_viewproduct />
             <Product_catagory />
             <Product_selling />
+            <Counter />
             <Product_speaker />
             <Product_ours />
             <Product_features />
