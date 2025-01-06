@@ -5,8 +5,14 @@ import { IoCartOutline } from "react-icons/io5";
 import { FaRegUser } from "react-icons/fa6";
 import { CiHeart } from "react-icons/ci";
 import { IoReorderThreeOutline } from "react-icons/io5";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { useLocation } from "react-router-dom";
+
+
 
 const Nav = () => {
+    const location = useLocation();
+    const { pathname } = location;
 
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -51,10 +57,28 @@ const Nav = () => {
                             <img src="img/logo.png" alt="logo" className='w-full  h-full object-contain' />
                         </div>
                         <ul className={`flex gap-[30px] font-poppins  ${isScrolled ? 'text-secondaryWhite' : 'text-textBlue'} text-[16px] font-normal md:${btnstyle}`}>
-                            <li><Link to='/' className=''>Home</Link></li>
-                            <li><Link to='/contact' className=''>Contact</Link></li>
-                            <li><Link to='/about' className=''>About</Link></li>
-                            <li><Link to='/signup' className=''>Sign Up</Link></li>
+                            <li className='flex items-center gap-1'>
+                                {pathname == "/" && (
+                                    <FaArrowRightLong className="text-[12px] md:hidden" />
+                                )}
+                                <Link to='/' className=''>Home</Link>
+                            </li>
+                            <li className='flex items-center gap-1'>
+                                {pathname == "/contact" && (
+                                    <FaArrowRightLong className="text-[12px] md:hidden" />
+                                )}<Link to='/contact' className=''>Contact</Link>
+                            </li>
+
+                            <li className='flex items-center gap-1'>
+                                {pathname == "/about" && (
+                                    <FaArrowRightLong className="text-[12px] md:hidden" />
+                                )}<Link to='/about' className=''>About</Link>
+                            </li>
+                            <li className='flex items-center gap-1'>
+                                {pathname == "/signup" && (
+                                    <FaArrowRightLong className="text-[12px] md:hidden" />
+                                )}
+                                <Link to='/signup' className=''>Sign Up</Link></li>
 
                         </ul>
 
@@ -68,7 +92,7 @@ const Nav = () => {
                             </div>
 
                             <ul className='flex text-[25px] gap-4 mx-4 py-3 px-2' id='myNav'>
-                                <li ><Link to='/favorite' className='active:text-red-400'>  <CiHeart  className={`${isScrolled ? 'text-secondaryWhite' : 'text-textBlue'}`}/></Link></li>
+                                <li ><Link to='/favorite' className='active:text-red-400'>  <CiHeart className={`${isScrolled ? 'text-secondaryWhite' : 'text-textBlue'}`} /></Link></li>
                                 <li className='relative'>
                                     <p id='cartCount' className='bg-red-600 rounded-[100px] text-[10px] text-textBlue font-poppins font-extralight  text-center p-[4px] absolute top-[-12px] right-[-12px]'>{cartItems.length}</p>
                                     <Link to='/addcart' className=''>
