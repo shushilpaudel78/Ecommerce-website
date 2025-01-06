@@ -1,8 +1,7 @@
 import React from 'react'
 import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
-import Our_cart from '../common/Our_cart';
-import Ourn_cart from '../common/Ourn_cart';
+import Our_cart from '../common/ShopingCart';
 import Red_button from '../common/Red_button';
 
 const Product_ours = () => {

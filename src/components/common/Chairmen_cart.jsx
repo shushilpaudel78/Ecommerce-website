@@ -4,25 +4,9 @@ import { Link } from 'react-router-dom'
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
+import { data } from '../constants/ChairPersonData';
 
 const Chairmen_cart = () => {
-
-    const Persons = [
-        {
-            name: "Tom Cruise",
-            position: "Founder & Chairmen",
-            img: "/img/about/chair2.png"
-
-        },
-
-        {
-            name: "shushil paudel",
-            position: "Founder & Chairmen",
-            img: "/img/about/chair2.png"
-
-        }
-    ]
-
 
 
 
@@ -30,12 +14,9 @@ const Chairmen_cart = () => {
 
         <>
 
-            {Persons.map((person) => (
-
-
+            {data?.map((person) => (
 
                 <div className="w-[33.33%] py-[5px] flex flex-col gap-3 md:w-[50%] sm:w-[100%]">
-
 
                     <div className="w-full h-[391] my-[20px] p-[10px]">
                         <img src={person.img} alt="chairperson" className='w-full h-full  object-contain' />

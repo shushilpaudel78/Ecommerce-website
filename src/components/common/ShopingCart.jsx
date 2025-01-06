@@ -1,49 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaRegHeart } from "react-icons/fa";
 import { IoEyeSharp } from "react-icons/io5";
 import { CiStar } from "react-icons/ci";
-import comppic from "/img/product/computer.png"
 
-const Ourn_cart = () => {
-
-    const products = [
-        {
-            id: 1,
-            img: "/img/product/computer.png",
-            name: "D Gaming Laptop",
-            price: "$700",
-            rating: "(88)"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.css';  // Swiper styles
+import { Navigation, Pagination } from 'swiper/modules';
+import { data } from '../constants/CartData';
+import AddtoCartButton from './AddtoCartButton';
 
 
-        }
-    ]
+const ShopingCart = () => {
+
+
     return (
         <>
-
             {
-                products.map((product) => (
-
-
-                    <div className="w-[25%]  md:w-[50%] sm:w-full hover:scale-105">
-
+                data.map((product) => (
+                    <div className="w-[25%] md:w-[50%] sm:w-full hover:scale-105 ">
                         <div className="bg-[#F5F5F5] mx-3 my-3">
-
-
-                            <div className="flex justify-end px-6 py-5">
+                            <div className="flex justify-between px-6 py-5">
+                                <p className='text-[16px] font-poppins bg-[#00FF66] w-[80px] h-[40px] text-center pt-[8px] text-white'>{product.product_version}</p>
 
                                 <div className="flex flex-col gap-4 text-[30px] left ">
                                     <FaRegHeart />
                                     <IoEyeSharp />
-
                                 </div>
-
 
                             </div>
 
-
                             <div className="w-[190px] h-[180px] ml-10 "><img src={product.img} alt="product photo" className='w-full h-full object-cover' /></div>
-
-                            <button className='w-full py-[10px] text-white bg-black font-poppins text-[16px]'>Add to cart</button>
 
 
                         </div>
@@ -59,11 +45,17 @@ const Ourn_cart = () => {
                                     <CiStar />
                                     <CiStar />
                                     <CiStar />
-                                    <p>{product.rating}</p>
+                                    <p>(325)</p>
                                 </div>
 
                             </div>
+                            <div className="flex gap-3">
+                                <input type="radio" name='product' className='bg-red-500' />
+                                <input type="radio" name='product' className='bg-red-500' />
 
+                            </div>
+
+                            <div><AddtoCartButton  name=' Add to Cart'/></div>
 
                         </div>
                     </div>
@@ -79,4 +71,4 @@ const Ourn_cart = () => {
     )
 }
 
-export default Ourn_cart
+export default ShopingCart

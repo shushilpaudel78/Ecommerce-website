@@ -46,7 +46,7 @@ const Nav = () => {
     return (
         <>
 
-            <div className={`w-full h-full py-[20px] px-[10px] sm:py-5  sticky top-0 ${isScrolled ? 'bg-primaryBlue' : 'transparent'}`}>
+            <div className={`w-full h-full py-[20px] px-[10px] sm:py-5  z-10 sticky top-0 ${isScrolled ? 'bg-primaryBlue' : 'transparent'}`}>
                 <div className=" max-w-[1200px] m-auto">
 
                     <div className="w-full h-auto flex justify-between items-center ">

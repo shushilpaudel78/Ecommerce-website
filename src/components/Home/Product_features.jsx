@@ -30,7 +30,7 @@ const Product_features = () => {
 
                         <div className="w-[50%] h-auto  md:w-full">
 
-                            <div className="bg-black mr-8 relative md:mr-0">
+                            <div className="bg-black mr-8 relative md:mr-0 z-0 overflow-hidden">
 
 
                                 <div className="w-full h-[600px] sm:h-[400px]">  <img src='/img/product/joystickblack.png' alt="img" className='w-full h-full object-cover' /></div>
@@ -54,13 +54,13 @@ const Product_features = () => {
 
                         <div className="w-[50% h-auto] ">
 
-                            <div className="w-full relative bg-black">
+                            <div className="w-full relative bg-black z-0">
 
                                 <div className="img  w-[80%] h-[286px] md:w-full">
                                     <img src='/img/product/girlwithblackhat.png' alt="Girl img" className='w-full h-full object-cover' />
                                 </div>
 
-                                <div className='absolute flex bottom-[34px] left-5 text-white flex-col'>
+                                <div className='absolute flex bottom-[34px] left-5 text-white flex-col overflow-hidden'>
                                     <h1 className='text-[24px] font-poppins font-normal' >Women’s Collections5</h1>
                                     <p className='text-[14px] font-poppins '> Featured woman collections that give you another vibe.</p>
                                     <button className='text-start border-b-[2px] max-w-[80px] text-[16px] font-poppins'>Shop Now</button>

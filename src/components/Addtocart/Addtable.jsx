@@ -3,6 +3,7 @@ import Ru_button from '../common/Ru_button'
 import Red_button from '../common/Red_button'
 import Addtotal from './Addtotal'
 import { useState, useEffect } from 'react'
+import { data } from '../constants/CartData'
 
 const Addtable = () => {
 
@@ -27,26 +28,7 @@ const Addtable = () => {
 
 
       
-   
 
-
-
-    // const products = [
-    //     {
-    //         id: 1,
-    //         image: "/img/Addtocart/Monitor-Cart-Small.png",
-    //         product_name:"Giant Keyboard",
-    //         product_price: "$345",
-    //         total_price: "$456"
-    //     },
-    //     {
-    //         id: 2,
-    //         image: "/img/product/keyboard.png",
-    //         product_name: "Giant Keyboard",
-    //         product_price: "$345",
-    //         total_price: "$456"
-    //     }
-    // ]
 
     return (
 
@@ -67,14 +49,14 @@ const Addtable = () => {
                             <th className='py-[20px] text-right px-[20px]'>Subtotal</th>
                         </tr>
 
-                        {cartItems.map((product) => (
+                        {data?.map((product) => (
 
 
                             <tr className='font-poppins text-[16px] font-normal shadow-sm text-left'>
                                 <td className='py-[20px] px-[20px]'>
                                     <div className="flex items-center flex-wrap gap-2">
                                         <div className="w-[54px] h-[54px]"><img src={product.img} alt="" className='w-full h-full object-contain' /></div>
-                                        <p>{product.name}</p>e
+                                        <p>{product.name}</p>
 
                                     </div>
                                 </td>

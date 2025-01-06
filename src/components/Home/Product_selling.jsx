@@ -1,6 +1,7 @@
 import React from 'react'
 import Selling_cart from '../common/Selling_cart'
 import Red_button from '../common/Red_button'
+import { products } from '../constants/DataApi';
 
 
 const Product_selling = () => {
@@ -11,49 +12,34 @@ const Product_selling = () => {
 
                 <div className="max-w-[1200px] m-auto">
 
-                    <div className="flex items-center gap-3  sm:flex-col sm:items-start px-[10px]">
-
-                        <div className="w-[30px] h-[40px] bg-red-500" ></div>
-                        <p className='font-poppins  text-[16px] font-semibold'>This Month</p>
-
-                    </div>
-
-
-                    <div className="flex justify-between items-center my-[20px] px-[10px]">
-
-                        <h1 className='text-[30px] font-poppins font-semibold'>Best Selling Products</h1>
-
-
-                        <div className="flex gap-[10px]">
-
-                            <Red_button name="View All" />
-
+                    <div className="flex justify-between items-center py-5">
+                        <div className="flex flex-col">
+                            <p className='font-poppins  text-[16px] font-medium text-black'>This Month</p>
+                            <h1 className='text-[30px] font-poppins font-semibold text-textBlue' >Best Selling Products</h1>
                         </div>
 
+                        <div className="flex gap-[10px]">
+                            <Red_button name="View All" />
+                        </div>
                     </div>
-
 
 
                     <div className="flex flex-wrap">
-                        <Selling_cart />
+                        {
+                            products?.map((item, i) => (
+                                <div key={i} className="w-[25%]  md:w-[50%] sm:w-[100%] px-2">
+                                    <Selling_cart name={item.name}  price={item.price}  img={item.img}/>
+                                </div>
+
+                            ))
+                        }
 
                     </div>
-
-
-
-
-
-
-
 
 
                 </div>
 
             </div>
-
-
-
-
 
         </>
     )
