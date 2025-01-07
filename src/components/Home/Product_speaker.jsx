@@ -14,7 +14,7 @@ const Product_speaker = () => {
                             <div className="flex h-auto w-full flex-col ml-[40px] mt-[80px] md:ml-0 sm:mt-4">
                                 <p className='text-[16px] font-poppins text-[#00FF66] font-normal my-[10px] sm:text-center'>Categories</p>
 
-                                <h1 className='text-[48px] font-poppins font-semibold text-white w-[80%] sm:text-center sm:w-full'>Enhance Your Music Experience</h1>
+                                <h1 className='text-[48px] font-grotesque font-semibold text-white w-[80%] sm:text-center sm:w-full'>Enhance Your Music Experience</h1>
 
                                 <div className="flex flex-wrap text-black gap-[10px] text-center text-[10px] font-poppins my-[20px] font-semibold sm:justify-center">
 

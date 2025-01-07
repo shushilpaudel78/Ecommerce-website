@@ -1,5 +1,6 @@
 import React from 'react'
 import Chairmen_cart from '../common/Chairmen_cart'
+import { data } from '../constants/ChairPersonData'
 
 
 const About_chairmen = () => {
@@ -9,8 +10,14 @@ const About_chairmen = () => {
                 <div className="max-w-[1200px] m-auto">
 
                     <div className="flex flex-wrap justify-start">
-                        <Chairmen_cart />
-                
+                        {data?.map((person) => (
+
+                            <div className="w-[33.33%] py-[5px]  md:w-[50%] sm:w-[100%]">
+                                <Chairmen_cart name={person.name}  img={person.img}  position={person.position}/>
+                            </div>
+                        ))}
+
+
                     </div>
                 </div>
 

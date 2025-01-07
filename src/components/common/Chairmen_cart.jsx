@@ -4,44 +4,29 @@ import { Link } from 'react-router-dom'
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
-import { data } from '../constants/ChairPersonData';
 
-const Chairmen_cart = () => {
-
-
+const Chairmen_cart = ({name, img, position}) => {
 
     return (
 
         <>
+            <div className="w-full flex flex-col gap-3">
 
-            {data?.map((person) => (
-
-                <div className="w-[33.33%] py-[5px] flex flex-col gap-3 md:w-[50%] sm:w-[100%]">
-
-                    <div className="w-full h-[391] my-[20px] p-[10px]">
-                        <img src={person.img} alt="chairperson" className='w-full h-full  object-contain' />
-                    </div>
-
-                    <div className="px-[20px]  flex flex-col gap-[10px]">
-                        <h1 className='font-poppins font-medium first-letter:uppercase text-[32px] leading-[30px]'>{person.name}</h1>
-                        <p className='font-poppins  font-normal text-[16px]  leading-[30px]'>{person.position}</p>
-                        <ul className='flex gap-[15px]'>
-                            <li><Link to='/twitter'><FaTwitter className='text-[20px]' /></Link></li>
-                            <li><Link to='/instagram'><FaInstagram className='text-[20px]' /></Link></li>
-                            <li><Link to='/linkin'> <FaLinkedinIn className='text-[20px]' /> </Link></li>
-                        </ul>
-
-
-                    </div>
-
-
-
+                <div className="w-full h-[391] my-[20px] p-[10px]">
+                    <img src={img} alt="chairperson" className='w-full h-full  object-contain' />
                 </div>
 
+                <div className="px-[20px]  flex flex-col gap-[10px]">
+                    <h1 className='font-poppins font-medium first-letter:uppercase text-[32px] leading-[30px]'>{name}</h1>
+                    <p className='font-poppins  font-normal text-[16px]  leading-[30px]'>{position}</p>
+                    <ul className='flex gap-[15px]'>
+                        <li><Link to='/twitter'><FaTwitter className='text-[20px]' /></Link></li>
+                        <li><Link to='/instagram'><FaInstagram className='text-[20px]' /></Link></li>
+                        <li><Link to='/linkin'> <FaLinkedinIn className='text-[20px]' /> </Link></li>
+                    </ul>
 
-            ))}
-
-
+                </div>
+            </div>
 
         </>
 

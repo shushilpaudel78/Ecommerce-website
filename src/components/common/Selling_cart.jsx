@@ -7,7 +7,7 @@ import 'swiper/css';
 
 
 
-const Selling_cart = ({img, name, price}) => {
+const Selling_cart = ({ img, name, price }) => {
 
 
     const [store, setStore] = useState([])
@@ -22,38 +22,40 @@ const Selling_cart = ({img, name, price}) => {
 
     return (
         <>
+            <div className="w-full">
 
-            <div className="w-full bg-lightBlue">
-                <div className="flex justify-between py-5 px-3">
-                    <p className='bg-red-600 w-[40px] h-[33px] text-center text-white font-poppins p-[5px]'>discount</p>
-                    <div className="flex flex-col gap-4 text-[30px]">
-                        <FaRegHeart />
-                        <IoEyeSharp />
+                <div className="w-full bg-lightBlue">
+                    <div className="flex justify-between py-5 px-3">
+                        <p className='bg-red-600 w-[40px] h-[33px] text-center  text-white font-poppins p-[5px]'>discount</p>
+                        <div className="flex flex-col gap-4 text-[30px]">
+                            <FaRegHeart />
+                            <IoEyeSharp />
 
+                        </div>
+
+                    </div>
+
+
+                    <div className="w-[190px] h-[180px] ml-10  sm:w-[250px] sm:h-[200px]"><img src={img} alt="product photo" className='w-full h-full object-cover' /></div>
+                    <div>
+                        <AddtoCartButton name="Add to Cart" />
                     </div>
 
                 </div>
 
 
-                <div className="w-[190px] h-[180px] ml-10  sm:w-[250px] sm:h-[200px]"><img src={img} alt="product photo" className='w-full h-full object-cover' /></div>
-                <div>
-                    <AddtoCartButton name="Add to Cart" />
+                <div className="flex flex-col p-5 font-poppins text-[16px] gap-2">
+                    <p className='font-semibold'>{name}</p>
+                    <p className='text-red-500'>{price} <span className='text-[#686666] mx-2 line-through'></span></p>
+                    <div className="flex  text-yellow-500">
+                        <CiStar />
+                        <CiStar />
+                        <CiStar />
+                        <CiStar />
+                        <p>(563)</p>
+                    </div>
+
                 </div>
-
-            </div>
-
-
-            <div className="flex flex-col p-5 font-poppins text-[16px] gap-2">
-                <p className='font-semibold'>{name}</p>
-                <p className='text-red-500'>{price} <span className='text-[#686666] mx-2 line-through'></span></p>
-                <div className="flex  text-yellow-500">
-                    <CiStar />
-                    <CiStar />
-                    <CiStar />
-                    <CiStar />
-                    <p>(563)</p>
-                </div>
-
             </div>
 
         </>

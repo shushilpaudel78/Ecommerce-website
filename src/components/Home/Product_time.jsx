@@ -29,8 +29,8 @@ const Product_time = () => {
 
                         <div className="flex justify-between items-center  sm:flex-col sm:gap-3 sm:my-0">
                             <div className="flex flex-col">
-                                <p className='font-poppins text-[16px] font-semibold text-black/80'>Today's</p>
-                                <h1 className='text-[30px] text-textBlue font-poppins font-semibold leading-[40px]'>Flash  Sales</h1>
+                                <p className='font-poppins text-[16px] font-semibold text-black'>Today's</p>
+                                <h1 className='text-[30px] text-textBlue font-grotesque font-semibold leading-[40px]'>Flash  Sales</h1>
                             </div>
 
                             <table className='w-[250px] h-auto  text-textBlue text-center font-poppins font-normal bg-lightBlue text-[14px] py-4 px-2 first-letter:uppercase' >

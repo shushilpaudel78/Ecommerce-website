@@ -15,7 +15,7 @@ const Product_selling = () => {
                     <div className="flex justify-between items-center py-5">
                         <div className="flex flex-col">
                             <p className='font-poppins  text-[16px] font-medium text-black'>This Month</p>
-                            <h1 className='text-[30px] font-poppins font-semibold text-textBlue' >Best Selling Products</h1>
+                            <h1 className='text-[30px] font-grotesque font-semibold text-textBlue' >Best Selling Products</h1>
                         </div>
 
                         <div className="flex gap-[10px]">
