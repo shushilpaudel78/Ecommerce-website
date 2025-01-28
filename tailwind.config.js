@@ -14,7 +14,8 @@ export default {
       white: "#F0F8FF",
       black: "#000000",
       colorBorder: "#072A4A",
-      secondaryWhite: "#e5e5e5"
+      secondaryWhite: "#e5e5e5",
+      colorRed:'[#DB4444]'
     },
     screens: {
       '2xl': { 'max': '1535px' },

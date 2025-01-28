@@ -5,18 +5,18 @@ const LoginForm = () => {
     return (
         <>
 
-            <div className="w-full h-auto mb-24">
+            <div className="w-full h-auto">
                 <div className="max-[1200px] m-auto">
 
-                    <div className="flex flex-wrap w-full h-auto">
-                        <div className="w-[60%] lg:hidden">
-                            <div className="w-full h-full truncate">
+                    <div className="flex flex-wrap w-full h-[100vh] overflow-hidden " >
+                        <div className="w-[60%] lg:hidden bg-textBlue">
+                            <div className="w-full h-full truncate " style={{clipPath:'polygon(100% 0, 100% 100%, 0 100%, 41% 48%, 0 1%)'}}>
                                 <img src='/img/about/mobile.png' alt="mobile image " className='w-full h-full object-cover ' />
                             </div>
 
                         </div>
 
-                        <div className="w-[40%] lg:w-[100%] lg:p-[10px] ">
+                        <div className="w-[40%] lg:w-[100%]">
 
                             <div className="flex flex-col w-full h-full mt-[150px] font-poppins pl-[100px] pr-[20px] lg:mt-[20px]  md:pl-[30px] sm:pl-[20px] sm:mt-[10px]">
 

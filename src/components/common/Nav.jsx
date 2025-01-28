@@ -94,12 +94,12 @@ const Nav = () => {
                             <ul className='flex text-[25px] gap-4 mx-4 py-3 px-2' id='myNav'>
                                 <li ><Link to='/favorite' className='active:text-red-400'>  <CiHeart className={`${isScrolled ? 'text-secondaryWhite' : 'text-textBlue'}`} /></Link></li>
                                 <li className='relative'>
-                                    <p id='cartCount' className='bg-red-600 rounded-[100px] text-[10px] text-textBlue font-poppins font-extralight  text-center p-[4px] absolute top-[-12px] right-[-12px]'>{cartItems.length}</p>
+                                    <p id='cartCount' className='bg-red-600 rounded-[100px] text-[10px]  bg-red-500 text-white font-poppins font-extralight  text-center p-[4px] absolute top-[-12px] right-[-12px]'>{cartItems.length}</p>
                                     <Link to='/addcart' className=''>
                                         <IoCartOutline className={`${isScrolled ? 'text-secondaryWhite' : 'text-textBlue'}`} /></Link>
                                 </li>
 
-                                <li ><Link to='/profile' className='active:text-red-400 text-textBlue'><FaRegUser className={`text-[20px] ${isScrolled ? 'text-secondaryWhite' : 'text-textBlue'}`} /></Link></li>
+                                <li ><Link to='/profile' className=' active:text-red-400 text-textBlue'><FaRegUser className={`text-[20px] ${isScrolled ? 'text-secondaryWhite' : 'text-textBlue'}`} /></Link></li>
                             </ul>
 
                             <div>

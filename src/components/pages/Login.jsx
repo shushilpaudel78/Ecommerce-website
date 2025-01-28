@@ -1,15 +1,11 @@
 import React from 'react'
-import Nav from '../common/Nav'
-import LoginForm from '../Login/LoginForm'
-import Footer from '../common/Footer'
+import LoginForm from '../auth/LoginForm'
 
 const Login = () => {
   return (
     <>
 
-    <Nav />
     <LoginForm />
-    <Footer />
 
 
       

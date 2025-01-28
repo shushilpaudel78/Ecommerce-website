@@ -10,7 +10,7 @@ const Counter = () => {
 
     return (
         <>
-            <div className="w-full py-5 bg-textBlue">
+            <div className="w-full py-8 bg-textBlue">
                 <div className="max-w-[1200px] m-auto">
                     <ScrollTrigger onEnter={() => setTrigger(true)} onExit={() => setTrigger(false)} >
                         {trigger &&
