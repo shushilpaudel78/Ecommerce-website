@@ -1,7 +1,7 @@
 import React from 'react'
-import Our_cart from '../common/ShopingCart';
 import Red_button from '../common/Red_button';
 import { LeftButton, RightButton } from '../common/LeftRightButton';
+import ShopingCart from '../common/ShopingCart'
 
 const Product_ours = () => {
     return (
@@ -27,7 +27,7 @@ const Product_ours = () => {
 
 
                     <div className="flex flex-wrap px-[10px]">
-                        <Our_cart />
+                        <ShopingCart />
                     </div>
 
 

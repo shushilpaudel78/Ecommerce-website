@@ -6,14 +6,9 @@ import Footer from '../common/Footer'
 const Billing = () => {
   return (
     <>
-
-
     <Nav  />
     <Billing_form />
     <Footer />
-
-
-      
     </>
   )
 }

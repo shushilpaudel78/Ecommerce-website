@@ -95,7 +95,7 @@ const Nav = () => {
                                 <li ><Link to='/favorite' className='active:text-red-400'>  <CiHeart className={`${isScrolled ? 'text-secondaryWhite' : 'text-textBlue'}`} /></Link></li>
                                 <li className='relative'>
                                     <p id='cartCount' className='bg-red-600 rounded-[100px] text-[10px]  bg-red-500 text-white font-poppins font-extralight  text-center p-[4px] absolute top-[-12px] right-[-12px]'>{cartItems.length}</p>
-                                    <Link to='/addcart' className=''>
+                                    <Link to='/checkout' className=''>
                                         <IoCartOutline className={`${isScrolled ? 'text-secondaryWhite' : 'text-textBlue'}`} /></Link>
                                 </li>
 

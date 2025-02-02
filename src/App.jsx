@@ -6,7 +6,7 @@ import Contact from './components/pages/Contact'
 import About from './components/pages/About'
 import Signup from './components/pages/Signup'
 import Login from './components/pages/Login'
-import Addtocart from './components/pages/Addtocart'
+import Checkout from './components/pages/Checkout'
 import Favorite from './components/pages/Favorite'
 import Billing from './components/pages/Billing'
 import Profile from './components/pages/Profile'
@@ -23,7 +23,7 @@ function App() {
           <Route element={<About />}  path='/about' />
           <Route element={<Signup />}  path='/signup' />
           <Route element={<Login />}  path='/login' />
-          <Route element={<Addtocart />}  path='/addcart' />
+          <Route element={<Checkout />}  path='/checkout' />
           <Route element={<Favorite />}  path='/favorite' />
           <Route element={<Billing />}  path='/billing' />
           <Route element={<Profile />}  path='/profile' />

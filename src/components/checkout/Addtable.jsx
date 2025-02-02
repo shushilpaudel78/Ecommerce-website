@@ -1,7 +1,7 @@
 import React from 'react'
 import Ru_button from '../common/Ru_button'
 import Red_button from '../common/Red_button'
-import Addtotal from './Addtotal'
+import Addtotal from '../common/Addtotal'
 import { useState, useEffect } from 'react'
 import { data } from '../constants/CartData'
 

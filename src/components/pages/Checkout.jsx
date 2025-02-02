@@ -1,9 +1,9 @@
 import React from 'react'
 import Nav from '../common/Nav'
-import Addtable from '../Addtocart/Addtable'
+import Addtable from '../checkout/Addtable'
 import Footer from '../common/Footer'
 
-const Addtocart = () => {
+const Checkout = () => {
   return (
     <>
     <Nav />
@@ -14,4 +14,4 @@ const Addtocart = () => {
   )
 }
 
-export default Addtocart
+export default Checkout

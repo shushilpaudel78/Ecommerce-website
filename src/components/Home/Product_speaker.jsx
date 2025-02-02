@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
+import CountUp from 'react-countup'
+import ScrollTrigger from 'react-scroll-trigger'
+
 
 const Product_speaker = () => {
+
+    const [trigger, setTrigger] = useState(false)
+
     return (
         <>
 
@@ -15,9 +21,20 @@ const Product_speaker = () => {
                                 <h1 className='text-[48px] font-grotesque font-semibold text-white w-[80%] sm:text-center sm:w-full'>Enhance Your Music Experience</h1>
                             </div>
 
-                            <div className="flex justify-center">
-                                <div className="w-[200px] h-[200px]">
-                                    <img src="img/mice.png" alt="image" className='w-full h-full object-cover' />
+                            <div className="flex justify-center w-full mt-6 relative">
+                                <div className="w-[200px] h-[200px] rounded-full overflow-hidden">
+                                    <img src="img/circle.png" alt="image" className='w-full h-full object-cover' />
+                                </div>
+                                <div className="absolute w-full h-full flex justify-center items-center z-30">
+                                    <ScrollTrigger onEnter={() => setTrigger(true)} onExit={() => setTrigger(false)} >
+
+                                        {trigger &&
+                                            <div className="flex">
+                                                <CountUp className='text-secondaryWhite text-[30px] font-grotesque font-bold' start={0} end={100} delay={1} />
+                                                <p className='text-secondaryWhite text-[30px] font-grotesque font-bold'>%</p>
+                                            </div>
+                                        }
+                                    </ScrollTrigger>
                                 </div>
                             </div>
                         </div>

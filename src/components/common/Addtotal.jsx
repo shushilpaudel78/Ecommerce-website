@@ -1,5 +1,5 @@
 import React from 'react'
-import Red_button from '../common/Red_button'
+import Red_button from './Red_button'
 
 const Addtotal = () => {
   return (
